@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Required meta taqs -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="twitter:card" content="Dashboard">
+    <meta name="twitter:site" content="@Evils">
+    <meta name="twitter:title" content="Evils Dashboard">
+    <meta name="twitter:description" content="Evils Dashboard lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+    <meta name="twitter:image" content="assets/images/favicon.svg">
+    
+    <title data-tid="Evils Dashboard">Evils Dashboard</title>
+    
+    <!-- Favicon -->
+    <link  rel="apple-touch-icon" href="assets/images/favicon.svg" sizes="40x40" type="image/svg">
+    <link rel="icon" href="assets/images/favicon.svg" sizes="40x40" type="image/svg">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/dataTables.min.css">
+    <link rel="stylesheet/less" href="assets/less/style.less">
+    <link rel="stylesheet/less" href="assets/less/pages/dashboard.less">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    
+    <!-- font -->
+    <link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
+    
+    <!-- Place your kit's code here -->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script src="assets/less/less.js"></script>
+    <script src="assets/js/dataTables.min.js"></script>
+    
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav id="navbar-normal" class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand">
+                <img src="assets/images/logo.svg" alt="logo Evil Dash">
+            </a>
+            <div class="d-flex">
+                <button type="button" class="btn-custom btn-small btn-icon" data-bs-toggle="modal" data-bs-target="#notificationModal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2705 2.66963C13.5636 2.39815 12.7976 2.25 12 2.25C8.77131 2.25 6.05895 4.67767 5.70241 7.88659L5.4506 10.1528L5.44445 10.2078C5.32759 11.2261 4.99613 12.2081 4.47192 13.0889L4.44351 13.1364L3.86548 14.0998L3.84605 14.1321C3.60038 14.5416 3.38731 14.8966 3.24704 15.1945C3.10493 15.4962 2.9733 15.8655 3.03755 16.2727C3.10348 16.6906 3.31854 17.0704 3.64292 17.3419C3.95905 17.6066 4.34348 17.6837 4.67532 17.7171C5.0029 17.75 5.41699 17.75 5.89446 17.75L5.93221 17.75H18.0677L18.1055 17.75C18.583 17.75 18.9971 17.75 19.3246 17.7171C19.6565 17.6837 20.0409 17.6066 20.357 17.3419C20.6814 17.0704 20.8965 16.6906 20.9624 16.2727C21.0267 15.8655 20.895 15.4962 20.7529 15.1945C20.6126 14.8966 20.3996 14.5416 20.1539 14.1322L20.1539 14.1322L20.1345 14.0998L19.5564 13.1364L19.528 13.0889C19.1332 12.4255 18.8477 11.7046 18.6809 10.954C18.4582 10.9843 18.2309 11 18 11C17.7088 11 17.4235 10.9751 17.1459 10.9273C17.3313 11.9598 17.701 12.9521 18.239 13.8561L18.2702 13.9081L18.8482 14.8715C19.1189 15.3227 19.2917 15.6124 19.3959 15.8336C19.4599 15.9694 19.4747 16.0337 19.4782 16.0527C19.4674 16.1024 19.4418 16.1477 19.4047 16.1824C19.3867 16.1893 19.3239 16.2096 19.1745 16.2246C18.9312 16.2491 18.5939 16.25 18.0677 16.25H5.93221C5.40607 16.25 5.06871 16.2491 4.82547 16.2246C4.67606 16.2096 4.61327 16.1893 4.59522 16.1824C4.55813 16.1477 4.53251 16.1024 4.52179 16.0527C4.52521 16.0337 4.54009 15.9694 4.60407 15.8336C4.70823 15.6124 4.88102 15.3227 5.15172 14.8715L5.72975 13.9081L5.76092 13.8561C6.39359 12.793 6.79364 11.6078 6.93467 10.3788L6.94143 10.3185L7.19323 8.05224C7.46537 5.60297 9.53563 3.75 12 3.75C12.4969 3.75 12.9778 3.82534 13.4311 3.96573C13.6434 3.48979 13.9278 3.05312 14.2705 2.66963ZM16.774 4.41972C16.3343 4.76129 16.041 5.2823 16.004 5.8728C16.34 6.368 16.5873 6.93032 16.7217 7.53822C17.0683 7.82658 17.5139 8 18 8C18.1046 8 18.2073 7.99197 18.3075 7.9765L18.2975 7.8866C18.1499 6.55813 17.5986 5.36357 16.774 4.41972Z" fill="white"/>
+                        <path d="M9.10222 17.6647C9.27315 18.6215 9.64978 19.467 10.1737 20.0701C10.6976 20.6731 11.3396 21 12 21C12.6604 21 13.3024 20.6731 13.8263 20.0701C14.3502 19.467 14.7269 18.6215 14.8978 17.6647" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                        <circle cx="18" cy="6" r="2.5" fill="#E8524A" stroke="#E8524A"/>
+                    </svg>
+                </button>
+                <button class="navbar-toggler" type="button" data-target="#navigationModal" data-toggle="modal">
+                    <img src="assets/images/icon/burger-menu-white.svg" alt="">
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcoll">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link">Dashboard</a></li>
+                    <li class="nav-item"><a href="users.html" class="nav-link">Users</a></li>
+                    <li class="nav-item"><a href="plans.html" class="nav-link">Plans</a></li>
+                    <li class="nav-item"><a href="releases.html" class="nav-link">Releases</a></li>
+                    <li class="nav-item"><a href="settings.html" class="nav-link">Settings</a></li>
+                </ul>
+                <!-- action navbar -->
+                <div class="action-navbar">
+                    <div class="pattern"></div>
+                    <div class="icon-bell">
+                        <button type="button" class="btn-custom btn-small btn-icon" onclick="myFunction()">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2705 2.66963C13.5636 2.39815 12.7976 2.25 12 2.25C8.77131 2.25 6.05895 4.67767 5.70241 7.88659L5.4506 10.1528L5.44445 10.2078C5.32759 11.2261 4.99613 12.2081 4.47192 13.0889L4.44351 13.1364L3.86548 14.0998L3.84605 14.1321C3.60038 14.5416 3.38731 14.8966 3.24704 15.1945C3.10493 15.4962 2.9733 15.8655 3.03755 16.2727C3.10348 16.6906 3.31854 17.0704 3.64292 17.3419C3.95905 17.6066 4.34348 17.6837 4.67532 17.7171C5.0029 17.75 5.41699 17.75 5.89446 17.75L5.93221 17.75H18.0677L18.1055 17.75C18.583 17.75 18.9971 17.75 19.3246 17.7171C19.6565 17.6837 20.0409 17.6066 20.357 17.3419C20.6814 17.0704 20.8965 16.6906 20.9624 16.2727C21.0267 15.8655 20.895 15.4962 20.7529 15.1945C20.6126 14.8966 20.3996 14.5416 20.1539 14.1322L20.1539 14.1322L20.1345 14.0998L19.5564 13.1364L19.528 13.0889C19.1332 12.4255 18.8477 11.7046 18.6809 10.954C18.4582 10.9843 18.2309 11 18 11C17.7088 11 17.4235 10.9751 17.1459 10.9273C17.3313 11.9598 17.701 12.9521 18.239 13.8561L18.2702 13.9081L18.8482 14.8715C19.1189 15.3227 19.2917 15.6124 19.3959 15.8336C19.4599 15.9694 19.4747 16.0337 19.4782 16.0527C19.4674 16.1024 19.4418 16.1477 19.4047 16.1824C19.3867 16.1893 19.3239 16.2096 19.1745 16.2246C18.9312 16.2491 18.5939 16.25 18.0677 16.25H5.93221C5.40607 16.25 5.06871 16.2491 4.82547 16.2246C4.67606 16.2096 4.61327 16.1893 4.59522 16.1824C4.55813 16.1477 4.53251 16.1024 4.52179 16.0527C4.52521 16.0337 4.54009 15.9694 4.60407 15.8336C4.70823 15.6124 4.88102 15.3227 5.15172 14.8715L5.72975 13.9081L5.76092 13.8561C6.39359 12.793 6.79364 11.6078 6.93467 10.3788L6.94143 10.3185L7.19323 8.05224C7.46537 5.60297 9.53563 3.75 12 3.75C12.4969 3.75 12.9778 3.82534 13.4311 3.96573C13.6434 3.48979 13.9278 3.05312 14.2705 2.66963ZM16.774 4.41972C16.3343 4.76129 16.041 5.2823 16.004 5.8728C16.34 6.368 16.5873 6.93032 16.7217 7.53822C17.0683 7.82658 17.5139 8 18 8C18.1046 8 18.2073 7.99197 18.3075 7.9765L18.2975 7.8866C18.1499 6.55813 17.5986 5.36357 16.774 4.41972Z" fill="white"/>
+                                <path d="M9.10222 17.6647C9.27315 18.6215 9.64978 19.467 10.1737 20.0701C10.6976 20.6731 11.3396 21 12 21C12.6604 21 13.3024 20.6731 13.8263 20.0701C14.3502 19.467 14.7269 18.6215 14.8978 17.6647" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                <circle cx="18" cy="6" r="2.5" fill="#E8524A" stroke="#E8524A"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <button id="btn-logout" type="button" class="btn-custom btn-text w-100" data-bs-toggle="modal" data-bs-target="#ModalLogout">
+                        <div class="list w-100">
+                            <div class="body-list d-flex align-items-center justify-content-between">
+                                <div class="icon-list">
+                                    <img src="assets/images/pp.svg" alt="">
+                                </div>
+                                <div class="title-body-list">
+                                    <h5 class="m0 neutral">Kathryn Murphy</h5>
+                                </div>
+                            </div>
+                            <div class="action-list ml16">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 7.13193V6.61204C7 4.46614 7 3.3932 7.6896 2.79511C8.37919 2.19703 9.44136 2.34877 11.5657 2.65224L15.8485 3.26408C18.3047 3.61495 19.5327 3.79039 20.2664 4.63628C21 5.48217 21 6.72271 21 9.20377V14.7962C21 17.2773 21 18.5178 20.2664 19.3637C19.5327 20.2096 18.3047 20.385 15.8485 20.7359L11.5657 21.3478C9.44136 21.6512 8.37919 21.803 7.6896 21.2049C7 20.6068 7 19.5339 7 17.388V17.066" stroke="#E8524A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 7L16 12M16 12L12 17M16 12H4" stroke="#E8524A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <!-- action navbar -->
+            </div>
+            <!-- Notifications -->
+            <div id="dropdownNotification" class="notification">
+                <div class="d-flex align-items-center justify-content-between mb24">
+                    <h3 class="m0">Notifications</h3>
+                    <a href="" class="body-2 text-link">
+                        <i>Mark all as read</i>
+                    </a>
+                </div>
+                <!-- notifi-list -->
+                <div class="list align-items-start">
+                    <div class="icon-list">
+                        <svg class="active" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="#E8524A"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2928 10C20.1868 10 21.0468 10.3533 21.6795 10.9873C22.3128 11.62 22.6668 12.4733 22.6668 13.3667V18.6333C22.6668 20.4933 21.1535 22 19.2928 22H12.7068C10.8462 22 9.3335 20.4933 9.3335 18.6333V13.3667C9.3335 11.5067 10.8395 10 12.7068 10H19.2928ZM20.3535 14.36L20.4069 14.3066C20.5662 14.1133 20.5662 13.8333 20.3995 13.64C20.3069 13.5406 20.1795 13.48 20.0469 13.4666C19.9069 13.4593 19.7735 13.5066 19.6729 13.6L16.6669 16C16.2802 16.3206 15.7262 16.3206 15.3335 16L12.3335 13.6C12.1262 13.4466 11.8395 13.4666 11.6669 13.6466C11.4869 13.8266 11.4669 14.1133 11.6195 14.3133L11.7069 14.4L14.7402 16.7666C15.1135 17.06 15.5662 17.22 16.0402 17.22C16.5129 17.22 16.9735 17.06 17.3462 16.7666L20.3535 14.36Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="body-list">
+                        <div class="title-body-list justify-content-between align-items-center pt8 pb8">
+                            <h4 class="m0">Informations</h4>
+                            <h5 class="m0">5m ago</h5>
+                        </div>
+                        <div class="subtitle-body-list">
+                            <p class="body-3 mb16">A feature has been added that allows the user
+                                to call a person who is saved as a pre-configured
+                                SOS message contact.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- notifi-list -->
+                <!-- notifi-list -->
+                <div class="list align-items-start">
+                    <div class="icon-list">
+                        <svg class="inactive" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="#101010"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2928 10C20.1868 10 21.0468 10.3533 21.6795 10.9873C22.3128 11.62 22.6668 12.4733 22.6668 13.3667V18.6333C22.6668 20.4933 21.1535 22 19.2928 22H12.7068C10.8462 22 9.3335 20.4933 9.3335 18.6333V13.3667C9.3335 11.5067 10.8395 10 12.7068 10H19.2928ZM20.3535 14.36L20.4069 14.3066C20.5662 14.1133 20.5662 13.8333 20.3995 13.64C20.3069 13.5406 20.1795 13.48 20.0469 13.4666C19.9069 13.4593 19.7735 13.5066 19.6729 13.6L16.6669 16C16.2802 16.3206 15.7262 16.3206 15.3335 16L12.3335 13.6C12.1262 13.4466 11.8395 13.4666 11.6669 13.6466C11.4869 13.8266 11.4669 14.1133 11.6195 14.3133L11.7069 14.4L14.7402 16.7666C15.1135 17.06 15.5662 17.22 16.0402 17.22C16.5129 17.22 16.9735 17.06 17.3462 16.7666L20.3535 14.36Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="body-list">
+                        <div class="title-body-list justify-content-between align-items-center pt8 pb8">
+                            <h4 class="m0">Informations</h4>
+                            <h5 class="m0">5m ago</h5>
+                        </div>
+                        <div class="subtitle-body-list">
+                            <p class="body-3 mb16">A feature has been added that allows the user
+                                to call a person who is saved as a pre-configured
+                                SOS message contact.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- notifi-list -->
+                <!-- notifi-list -->
+                <div class="list align-items-start">
+                    <div class="icon-list">
+                        <svg class="inactive" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="#101010"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2928 10C20.1868 10 21.0468 10.3533 21.6795 10.9873C22.3128 11.62 22.6668 12.4733 22.6668 13.3667V18.6333C22.6668 20.4933 21.1535 22 19.2928 22H12.7068C10.8462 22 9.3335 20.4933 9.3335 18.6333V13.3667C9.3335 11.5067 10.8395 10 12.7068 10H19.2928ZM20.3535 14.36L20.4069 14.3066C20.5662 14.1133 20.5662 13.8333 20.3995 13.64C20.3069 13.5406 20.1795 13.48 20.0469 13.4666C19.9069 13.4593 19.7735 13.5066 19.6729 13.6L16.6669 16C16.2802 16.3206 15.7262 16.3206 15.3335 16L12.3335 13.6C12.1262 13.4466 11.8395 13.4666 11.6669 13.6466C11.4869 13.8266 11.4669 14.1133 11.6195 14.3133L11.7069 14.4L14.7402 16.7666C15.1135 17.06 15.5662 17.22 16.0402 17.22C16.5129 17.22 16.9735 17.06 17.3462 16.7666L20.3535 14.36Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="body-list">
+                        <div class="title-body-list justify-content-between align-items-center pt8 pb8">
+                            <h4 class="m0">Informations</h4>
+                            <h5 class="m0">5m ago</h5>
+                        </div>
+                        <div class="subtitle-body-list">
+                            <p class="body-3 mb16">A feature has been added that allows the user
+                                to call a person who is saved as a pre-configured
+                                SOS message contact.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- notifi-list -->
+                <!-- notifi-list -->
+                <div class="list align-items-start">
+                    <div class="icon-list">
+                        <svg class="inactive" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="#101010"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2928 10C20.1868 10 21.0468 10.3533 21.6795 10.9873C22.3128 11.62 22.6668 12.4733 22.6668 13.3667V18.6333C22.6668 20.4933 21.1535 22 19.2928 22H12.7068C10.8462 22 9.3335 20.4933 9.3335 18.6333V13.3667C9.3335 11.5067 10.8395 10 12.7068 10H19.2928ZM20.3535 14.36L20.4069 14.3066C20.5662 14.1133 20.5662 13.8333 20.3995 13.64C20.3069 13.5406 20.1795 13.48 20.0469 13.4666C19.9069 13.4593 19.7735 13.5066 19.6729 13.6L16.6669 16C16.2802 16.3206 15.7262 16.3206 15.3335 16L12.3335 13.6C12.1262 13.4466 11.8395 13.4666 11.6669 13.6466C11.4869 13.8266 11.4669 14.1133 11.6195 14.3133L11.7069 14.4L14.7402 16.7666C15.1135 17.06 15.5662 17.22 16.0402 17.22C16.5129 17.22 16.9735 17.06 17.3462 16.7666L20.3535 14.36Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="body-list">
+                        <div class="title-body-list justify-content-between align-items-center pt8 pb8">
+                            <h4 class="m0">Informations</h4>
+                            <h5 class="m0">5m ago</h5>
+                        </div>
+                        <div class="subtitle-body-list">
+                            <p class="body-3 mb16">A feature has been added that allows the user
+                                to call a person who is saved as a pre-configured
+                                SOS message contact.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- notifi-list -->
+                <div class="notifi-footer text-center">
+                    <a href="" class="body-1 text-link">
+                        <i>See all notifications</i>
+                    </a>
+                </div>
+            </div>
+            <!-- Notifications -->
+        </div>
+    </nav>
+    <!-- Navbar -->
+    
+    <!-- Dashboard -->
+    <section id="dashboard">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 col-12">
+                    <div class="card-wrapper dashboard-wrapper">
+                        <!-- section title -->
+                        <div class="section-title">
+                            <div class="title-wrapper">
+                                <h3 class="mb4">Upcoming Cancellations</h3>
+                                <p class="mb0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="filter-wrapper">
+                                <div class="btn-releases">
+                                    <a href="" class="btn-custom btn-large btn-outline-red">
+                                        Export Data
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- section title -->
+                        <!-- row -->
+                        <div class="row">
+                            <div class="col-lg-8 col-md-12 col-12">   
+                                <!-- release table -->
+                                <div class="table-responsive">
+                                    <table id="tableUpcoming" class="table table-release">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="cancell-wrapper mb16">
+                                                        <div class="subtitle">
+                                                            <h6 class="m0">Today </h6>
+                                                            <div class="pattern-dashboard"></div>
+                                                            <p class="m0">13 July, 2021</p>
+                                                        </div>
+                                                        <a href="" class="export-data">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M4.66667 6.66666L8 3.33333M8 3.33333L11.3333 6.66666M8 3.33333L8 9.33333" stroke="#E8524A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M3.33333 10.6667L3.33333 11.3333C3.33333 12.0697 3.93029 12.6667 4.66667 12.6667L11.3333 12.6667C12.0697 12.6667 12.6667 12.0697 12.6667 11.3333V10.6667" stroke="#E8524A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                            Export Data
+                                                        </a>
+                                                    </div>
+                                                    <div class="upcoming-list-wrapper">
+                                                        <!-- list -->
+                                                        <div class="list mb16">
+                                                            <div class="body-w-icon">
+                                                                <div class="icon-list btn-custom btn-medium btn-icon">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M16.3763 17.0045C16.837 16.9085 17.1113 16.4264 16.8824 16.0153C16.3778 15.1089 15.5827 14.3124 14.5657 13.7054C13.2559 12.9237 11.651 12.5 10 12.5C8.34899 12.5 6.74412 12.9237 5.43429 13.7054C4.41726 14.3124 3.62224 15.1089 3.11759 16.0153C2.88867 16.4264 3.16304 16.9085 3.62372 17.0045C7.82939 17.881 12.1706 17.881 16.3763 17.0045Z" fill="#101010" fill-opacity="0.12"/>
+                                                                        <ellipse cx="10" cy="6.66667" rx="4.16667" ry="4.16667" fill="#101010" fill-opacity="0.12"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="body-list">
+                                                                    <h5 class="m0">Brooklyn Simmons</h5>
+                                                                    <p class="m0"><span>Last Subscription :</span> December 21, 2021</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="action-list">
+                                                                <p class="m0">at 03:40:32</p>  
+                                                            </div>
+                                                        </div>
+                                                        <!-- list -->
+                                                        <!-- list -->
+                                                        <div class="list mb16">
+                                                            <div class="body-w-icon">
+                                                                <div class="icon-list btn-custom btn-medium btn-icon">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M16.3763 17.0045C16.837 16.9085 17.1113 16.4264 16.8824 16.0153C16.3778 15.1089 15.5827 14.3124 14.5657 13.7054C13.2559 12.9237 11.651 12.5 10 12.5C8.34899 12.5 6.74412 12.9237 5.43429 13.7054C4.41726 14.3124 3.62224 15.1089 3.11759 16.0153C2.88867 16.4264 3.16304 16.9085 3.62372 17.0045C7.82939 17.881 12.1706 17.881 16.3763 17.0045Z" fill="#101010" fill-opacity="0.12"/>
+                                                                        <ellipse cx="10" cy="6.66667" rx="4.16667" ry="4.16667" fill="#101010" fill-opacity="0.12"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="body-list">
+                                                                    <h5 class="m0">Brooklyn Simmons</h5>
+                                                                    <p class="m0"><span>Last Subscription :</span> December 21, 2021</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="action-list">
+                                                                <p class="m0">at 03:40:32</p>  
+                                                            </div>
+                                                        </div>
+                                                        <!-- list -->
+                                                        <!-- list -->
+                                                        <div class="list mb16">
+                                                            <div class="body-w-icon">
+                                                                <div class="icon-list btn-custom btn-medium btn-icon">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M16.3763 17.0045C16.837 16.9085 17.1113 16.4264 16.8824 16.0153C16.3778 15.1089 15.5827 14.3124 14.5657 13.7054C13.2559 12.9237 11.651 12.5 10 12.5C8.34899 12.5 6.74412 12.9237 5.43429 13.7054C4.41726 14.3124 3.62224 15.1089 3.11759 16.0153C2.88867 16.4264 3.16304 16.9085 3.62372 17.0045C7.82939 17.881 12.1706 17.881 16.3763 17.0045Z" fill="#101010" fill-opacity="0.12"/>
+                                                                        <ellipse cx="10" cy="6.66667" rx="4.16667" ry="4.16667" fill="#101010" fill-opacity="0.12"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="body-list">
+                                                                    <h5 class="m0">Brooklyn Simmons</h5>
+                                                                    <p class="m0"><span>Last Subscription :</span> December 21, 2021</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="action-list">
+                                                                <p class="m0">at 03:40:32</p>  
+                                                            </div>
+                                                        </div>
+                                                        <!-- list -->
+                                                        <!-- list -->
+                                                        <div class="list mb16">
+                                                            <div class="body-w-icon">
+                                                                <div class="icon-list btn-custom btn-medium btn-icon">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M16.3763 17.0045C16.837 16.9085 17.1113 16.4264 16.8824 16.0153C16.3778 15.1089 15.5827 14.3124 14.5657 13.7054C13.2559 12.9237 11.651 12.5 10 12.5C8.34899 12.5 6.74412 12.9237 5.43429 13.7054C4.41726 14.3124 3.62224 15.1089 3.11759 16.0153C2.88867 16.4264 3.16304 16.9085 3.62372 17.0045C7.82939 17.881 12.1706 17.881 16.3763 17.0045Z" fill="#101010" fill-opacity="0.12"/>
+                                                                        <ellipse cx="10" cy="6.66667" rx="4.16667" ry="4.16667" fill="#101010" fill-opacity="0.12"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="body-list">
+                                                                    <h5 class="m0">Brooklyn Simmons</h5>
+                                                                    <p class="m0"><span>Last Subscription :</span> December 21, 2021</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="action-list">
+                                                                <p class="m0">at 03:40:32</p>  
+                                                            </div>
+                                                        </div>
+                                                        <!-- list -->
+                                                        <!-- list -->
+                                                        <div class="list mb16">
+                                                            <div class="body-w-icon">
+                                                                <div class="icon-list btn-custom btn-medium btn-icon">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M16.3763 17.0045C16.837 16.9085 17.1113 16.4264 16.8824 16.0153C16.3778 15.1089 15.5827 14.3124 14.5657 13.7054C13.2559 12.9237 11.651 12.5 10 12.5C8.34899 12.5 6.74412 12.9237 5.43429 13.7054C4.41726 14.3124 3.62224 15.1089 3.11759 16.0153C2.88867 16.4264 3.16304 16.9085 3.62372 17.0045C7.82939 17.881 12.1706 17.881 16.3763 17.0045Z" fill="#101010" fill-opacity="0.12"/>
+                                                                        <ellipse cx="10" cy="6.66667" rx="4.16667" ry="4.16667" fill="#101010" fill-opacity="0.12"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="body-list">
+                                                                    <h5 class="m0">Brooklyn Simmons</h5>
+                                                                    <p class="m0"><span>Last Subscription :</span> December 21, 2021</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="action-list">
+                                                                <p class="m0">at 03:40:32</p>  
+                                                            </div>
+                                                        </div>
+                                                        <!-- list -->
+                                                        <!-- list -->
+                                                        <div class="list mb16">
+                                                            <div class="body-w-icon">
+                                                                <div class="icon-list btn-custom btn-medium btn-icon">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M16.3763 17.0045C16.837 16.9085 17.1113 16.4264 16.8824 16.0153C16.3778 15.1089 15.5827 14.3124 14.5657 13.7054C13.2559 12.9237 11.651 12.5 10 12.5C8.34899 12.5 6.74412 12.9237 5.43429 13.7054C4.41726 14.3124 3.62224 15.1089 3.11759 16.0153C2.88867 16.4264 3.16304 16.9085 3.62372 17.0045C7.82939 17.881 12.1706 17.881 16.3763 17.0045Z" fill="#101010" fill-opacity="0.12"/>
+                                                                        <ellipse cx="10" cy="6.66667" rx="4.16667" ry="4.16667" fill="#101010" fill-opacity="0.12"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="body-list">
+                                                                    <h5 class="m0">Brooklyn Simmons</h5>
+                                                                    <p class="m0"><span>Last Subscription :</span> December 21, 2021</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="action-list">
+                                                                <p class="m0">at 03:40:32</p>  
+                                                            </div>
+                                                        </div>
+                                                        <!-- list -->
+                                                        <!-- list -->
+                                                        <div class="list mb16">
+                                                            <div class="body-w-icon">
+                                                                <div class="icon-list btn-custom btn-medium btn-icon">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M16.3763 17.0045C16.837 16.9085 17.1113 16.4264 16.8824 16.0153C16.3778 15.1089 15.5827 14.3124 14.5657 13.7054C13.2559 12.9237 11.651 12.5 10 12.5C8.34899 12.5 6.74412 12.9237 5.43429 13.7054C4.41726 14.3124 3.62224 15.1089 3.11759 16.0153C2.88867 16.4264 3.16304 16.9085 3.62372 17.0045C7.82939 17.881 12.1706 17.881 16.3763 17.0045Z" fill="#101010" fill-opacity="0.12"/>
+                                                                        <ellipse cx="10" cy="6.66667" rx="4.16667" ry="4.16667" fill="#101010" fill-opacity="0.12"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="body-list">
+                                                                    <h5 class="m0">Brooklyn Simmons</h5>
+                                                                    <p class="m0"><span>Last Subscription :</span> December 21, 2021</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="action-list">
+                                                                <p class="m0">at 03:40:32</p>  
+                                                            </div>
+                                                        </div>
+                                                        <!-- list -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="cancell-wrapper mb16">
+                                                        <div class="subtitle">
+                                                            <h6 class="m0">Yesterday </h6>
+                                                            <div class="pattern-dashboard"></div>
+                                                            <p class="m0">12 July, 2021</p>
+                                                        </div>
+                                                        <a href="" class="export-data">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M4.66667 6.66666L8 3.33333M8 3.33333L11.3333 6.66666M8 3.33333L8 9.33333" stroke="#E8524A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M3.33333 10.6667L3.33333 11.3333C3.33333 12.0697 3.93029 12.6667 4.66667 12.6667L11.3333 12.6667C12.0697 12.6667 12.6667 12.0697 12.6667 11.3333V10.6667" stroke="#E8524A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                            Export Data
+                                                        </a>
+                                                    </div>
+                                                    <div class="upcoming-list-wrapper">
+                                                        <!-- list -->
+                                                        <div class="list mb16">
+                                                            <div class="body-w-icon">
+                                                                <div class="icon-list btn-custom btn-medium btn-icon">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M16.3763 17.0045C16.837 16.9085 17.1113 16.4264 16.8824 16.0153C16.3778 15.1089 15.5827 14.3124 14.5657 13.7054C13.2559 12.9237 11.651 12.5 10 12.5C8.34899 12.5 6.74412 12.9237 5.43429 13.7054C4.41726 14.3124 3.62224 15.1089 3.11759 16.0153C2.88867 16.4264 3.16304 16.9085 3.62372 17.0045C7.82939 17.881 12.1706 17.881 16.3763 17.0045Z" fill="#101010" fill-opacity="0.12"/>
+                                                                        <ellipse cx="10" cy="6.66667" rx="4.16667" ry="4.16667" fill="#101010" fill-opacity="0.12"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="body-list">
+                                                                    <h5 class="m0">Brooklyn Simmons</h5>
+                                                                    <p class="m0"><span>Last Subscription :</span> December 21, 2021</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="action-list">
+                                                                <p class="m0">at 03:40:32</p>  
+                                                            </div>
+                                                        </div>
+                                                        <!-- list -->
+                                                        <!-- list -->
+                                                        <div class="list mb16">
+                                                            <div class="body-w-icon">
+                                                                <div class="icon-list btn-custom btn-medium btn-icon">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M16.3763 17.0045C16.837 16.9085 17.1113 16.4264 16.8824 16.0153C16.3778 15.1089 15.5827 14.3124 14.5657 13.7054C13.2559 12.9237 11.651 12.5 10 12.5C8.34899 12.5 6.74412 12.9237 5.43429 13.7054C4.41726 14.3124 3.62224 15.1089 3.11759 16.0153C2.88867 16.4264 3.16304 16.9085 3.62372 17.0045C7.82939 17.881 12.1706 17.881 16.3763 17.0045Z" fill="#101010" fill-opacity="0.12"/>
+                                                                        <ellipse cx="10" cy="6.66667" rx="4.16667" ry="4.16667" fill="#101010" fill-opacity="0.12"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="body-list">
+                                                                    <h5 class="m0">Brooklyn Simmons</h5>
+                                                                    <p class="m0"><span>Last Subscription :</span> December 21, 2021</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="action-list">
+                                                                <p class="m0">at 03:40:32</p>  
+                                                            </div>
+                                                        </div>
+                                                        <!-- list -->
+                                                        <!-- list -->
+                                                        <div class="list mb16">
+                                                            <div class="body-w-icon">
+                                                                <div class="icon-list btn-custom btn-medium btn-icon">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M16.3763 17.0045C16.837 16.9085 17.1113 16.4264 16.8824 16.0153C16.3778 15.1089 15.5827 14.3124 14.5657 13.7054C13.2559 12.9237 11.651 12.5 10 12.5C8.34899 12.5 6.74412 12.9237 5.43429 13.7054C4.41726 14.3124 3.62224 15.1089 3.11759 16.0153C2.88867 16.4264 3.16304 16.9085 3.62372 17.0045C7.82939 17.881 12.1706 17.881 16.3763 17.0045Z" fill="#101010" fill-opacity="0.12"/>
+                                                                        <ellipse cx="10" cy="6.66667" rx="4.16667" ry="4.16667" fill="#101010" fill-opacity="0.12"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="body-list">
+                                                                    <h5 class="m0">Brooklyn Simmons</h5>
+                                                                    <p class="m0"><span>Last Subscription :</span> December 21, 2021</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="action-list">
+                                                                <p class="m0">at 03:40:32</p>  
+                                                            </div>
+                                                        </div>
+                                                        <!-- list -->
+                                                        <!-- list -->
+                                                        <div class="list mb16">
+                                                            <div class="body-w-icon">
+                                                                <div class="icon-list btn-custom btn-medium btn-icon">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M16.3763 17.0045C16.837 16.9085 17.1113 16.4264 16.8824 16.0153C16.3778 15.1089 15.5827 14.3124 14.5657 13.7054C13.2559 12.9237 11.651 12.5 10 12.5C8.34899 12.5 6.74412 12.9237 5.43429 13.7054C4.41726 14.3124 3.62224 15.1089 3.11759 16.0153C2.88867 16.4264 3.16304 16.9085 3.62372 17.0045C7.82939 17.881 12.1706 17.881 16.3763 17.0045Z" fill="#101010" fill-opacity="0.12"/>
+                                                                        <ellipse cx="10" cy="6.66667" rx="4.16667" ry="4.16667" fill="#101010" fill-opacity="0.12"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="body-list">
+                                                                    <h5 class="m0">Brooklyn Simmons</h5>
+                                                                    <p class="m0"><span>Last Subscription :</span> December 21, 2021</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="action-list">
+                                                                <p class="m0">at 03:40:32</p>  
+                                                            </div>
+                                                        </div>
+                                                        <!-- list -->
+                                                        <!-- list -->
+                                                        <div class="list mb16">
+                                                            <div class="body-w-icon">
+                                                                <div class="icon-list btn-custom btn-medium btn-icon">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M16.3763 17.0045C16.837 16.9085 17.1113 16.4264 16.8824 16.0153C16.3778 15.1089 15.5827 14.3124 14.5657 13.7054C13.2559 12.9237 11.651 12.5 10 12.5C8.34899 12.5 6.74412 12.9237 5.43429 13.7054C4.41726 14.3124 3.62224 15.1089 3.11759 16.0153C2.88867 16.4264 3.16304 16.9085 3.62372 17.0045C7.82939 17.881 12.1706 17.881 16.3763 17.0045Z" fill="#101010" fill-opacity="0.12"/>
+                                                                        <ellipse cx="10" cy="6.66667" rx="4.16667" ry="4.16667" fill="#101010" fill-opacity="0.12"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="body-list">
+                                                                    <h5 class="m0">Brooklyn Simmons</h5>
+                                                                    <p class="m0"><span>Last Subscription :</span> December 21, 2021</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="action-list">
+                                                                <p class="m0">at 03:40:32</p>  
+                                                            </div>
+                                                        </div>
+                                                        <!-- list -->
+                                                        <!-- list -->
+                                                        <div class="list mb16">
+                                                            <div class="body-w-icon">
+                                                                <div class="icon-list btn-custom btn-medium btn-icon">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M16.3763 17.0045C16.837 16.9085 17.1113 16.4264 16.8824 16.0153C16.3778 15.1089 15.5827 14.3124 14.5657 13.7054C13.2559 12.9237 11.651 12.5 10 12.5C8.34899 12.5 6.74412 12.9237 5.43429 13.7054C4.41726 14.3124 3.62224 15.1089 3.11759 16.0153C2.88867 16.4264 3.16304 16.9085 3.62372 17.0045C7.82939 17.881 12.1706 17.881 16.3763 17.0045Z" fill="#101010" fill-opacity="0.12"/>
+                                                                        <ellipse cx="10" cy="6.66667" rx="4.16667" ry="4.16667" fill="#101010" fill-opacity="0.12"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="body-list">
+                                                                    <h5 class="m0">Brooklyn Simmons</h5>
+                                                                    <p class="m0"><span>Last Subscription :</span> December 21, 2021</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="action-list">
+                                                                <p class="m0">at 03:40:32</p>  
+                                                            </div>
+                                                        </div>
+                                                        <!-- list -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- release table -->
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-12 order-sm-1">
+                                <!-- Cancellation day -->
+                                <div class="card-skeu mb16">
+                                    <div class="d-block">
+                                        <p class="mb8 high-emphasis">Today Cancellations</p>
+                                        <h3 class="m0">3 <span class="body-2">Member</span></h3>
+                                    </div>
+                                </div>
+                                <!-- Cancellation day -->
+                                <!-- Member cancellation -->
+                                <div class="card-skeu mb16">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-block">
+                                            <p class="body-2 mb0 high-emphasis">Total Cancellations</p>
+                                            <p class="d-block text-red">All Members</p>
+                                        </div>
+                                        <div class="d-flex justify-content-start">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.577 5.52566L4.65811 3.55271C4.3578 3.4526 4.20764 3.40255 4.10382 3.47738C4 3.55221 4 3.71049 4 4.02705V8.66667L10.577 6.47434C11.1653 6.27824 11.4594 6.18019 11.4594 6C11.4594 5.81981 11.1653 5.72176 10.577 5.52566Z" fill="#E8524A"/>
+                                                <path d="M4 8.66667V4.02705C4 3.71049 4 3.55221 4.10382 3.47738C4.20764 3.40255 4.3578 3.4526 4.65811 3.55271L10.577 5.52566C11.1653 5.72176 11.4594 5.81981 11.4594 6C11.4594 6.18019 11.1653 6.27824 10.577 6.47434L4 8.66667ZM4 8.66667V12V12.6667" stroke="#E8524A" stroke-width="2" stroke-linecap="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <h3 class="mb0">135 <span class="body-2">Member</span></h3>
+                                    <p class="mb0"><span class="text-red">0,5%</span> of all members </p>
+                                </div>
+                                <!-- Member cancellation -->
+                                <!-- Member cancellation -->
+                                <div class="card-skeu mb16">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-block">
+                                            <p class="body-2 mb0 high-emphasis">Total Cancellations</p>
+                                            <p class="d-block text-red">Active Subscription</p>
+                                        </div>
+                                        <div class="d-flex justify-content-start">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.577 5.52566L4.65811 3.55271C4.3578 3.4526 4.20764 3.40255 4.10382 3.47738C4 3.55221 4 3.71049 4 4.02705V8.66667L10.577 6.47434C11.1653 6.27824 11.4594 6.18019 11.4594 6C11.4594 5.81981 11.1653 5.72176 10.577 5.52566Z" fill="#E8524A"/>
+                                                <path d="M4 8.66667V4.02705C4 3.71049 4 3.55221 4.10382 3.47738C4.20764 3.40255 4.3578 3.4526 4.65811 3.55271L10.577 5.52566C11.1653 5.72176 11.4594 5.81981 11.4594 6C11.4594 6.18019 11.1653 6.27824 10.577 6.47434L4 8.66667ZM4 8.66667V12V12.6667" stroke="#E8524A" stroke-width="2" stroke-linecap="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <h3 class="mb0">85 <span class="body-2">Member</span></h3>
+                                    <p class="mb0"><span class="text-red">0,5%</span> of all members </p>
+                                </div>
+                                <!-- Member cancellation -->
+                            </div>
+                        </div>
+                        <!-- row -->
+                    </div>
+                    <!-- member analytics -->
+                    <div class="card-wrapper analytics">
+                        <!-- section title -->
+                        <div class="section-title">
+                            <div class="title-wrapper">
+                                <h3 class="mb4">Member Analytic</h3>
+                                <p class="mb0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="filter-wrapper">
+                            </div>
+                        </div>
+                        <!-- section title -->
+                        <!-- content -->
+                        <div class="row">
+                            <div class="col-lg-3 col-md-12 col-12">
+                                <h4 class="mb16">Recent New Member</h4>
+                                <div class="recent-wrapper">
+                                    <div class="list w-100">
+                                        <div class="body-list w-100">
+                                            <div class="title-body-list mb4">
+                                                <p class="body-1 high-emphasis mb4">Brooklyn Simmons</p>
+                                            </div>
+                                            <div class="subtitle-body-list justify-content-between">
+                                                <p class="body-2 low-emphasis mb0">13:40:32</p>
+                                                <p class="body-2 high-emphasis mb0">Today</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list w-100">
+                                        <div class="body-list w-100">
+                                            <div class="title-body-list mb4">
+                                                <p class="body-1 high-emphasis mb4">Brooklyn Simmons</p>
+                                            </div>
+                                            <div class="subtitle-body-list justify-content-between">
+                                                <p class="body-2 low-emphasis mb0">13:40:32</p>
+                                                <p class="body-2 high-emphasis mb0">Today</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list w-100">
+                                        <div class="body-list w-100">
+                                            <div class="title-body-list mb4">
+                                                <p class="body-1 high-emphasis mb4">Brooklyn Simmons</p>
+                                            </div>
+                                            <div class="subtitle-body-list justify-content-between">
+                                                <p class="body-2 low-emphasis mb0">13:40:32</p>
+                                                <p class="body-2 high-emphasis mb0">Today</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list w-100">
+                                        <div class="body-list w-100">
+                                            <div class="title-body-list mb4">
+                                                <p class="body-1 high-emphasis mb4">Brooklyn Simmons</p>
+                                            </div>
+                                            <div class="subtitle-body-list justify-content-between">
+                                                <p class="body-2 low-emphasis mb0">13:40:32</p>
+                                                <p class="body-2 high-emphasis mb0">Today</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-9 col-md-12 col-12">
+                                <h4 class="mb16">Analytical Graphic</h4>
+                                <div class="analytical-wrapper">
+                                    <div class="chart-wrapper">
+                                        <canvas id="memberChart" height="200"></canvas>
+                                    </div>
+                                    <div class="card-skeu">
+                                        <div class="d-block">
+                                            <svg class="mb8" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.101 13.6036C13.4696 13.5268 13.6891 13.1411 13.5059 12.8122C13.1022 12.0871 12.4662 11.4499 11.6526 10.9644C10.6047 10.339 9.3208 10 7.99999 10C6.67919 10 5.39529 10.339 4.34742 10.9643C3.5338 11.4499 2.89779 12.0871 2.49406 12.8122C2.31093 13.1411 2.53042 13.5268 2.89897 13.6036C6.2635 14.3048 9.73648 14.3048 13.101 13.6036Z" fill="#E8524A"/>
+                                                <ellipse cx="7.99999" cy="5.33333" rx="3.33333" ry="3.33333" fill="#E8524A"/>
+                                            </svg>
+                                            <p class="mb4">Total Member Now</p>
+                                            <h3 class="mb0">1435 Member</h3>
+                                        </div>
+                                        <div class="d-block">
+                                            <svg class="mb8" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3732 9.89528C14.4585 10.4409 14.0028 10.8913 13.4505 10.8913H11.8633C11.311 10.8913 10.8794 10.4304 10.6904 9.91151C10.6054 9.67806 10.4901 9.45598 10.347 9.25121L12.9009 6.69727C13.6807 7.6084 14.189 8.71673 14.3732 9.89528ZM12.1938 5.99018C11.1559 5.10196 9.86202 4.56605 8.50001 4.46021V8.07204C8.90968 8.1447 9.29879 8.30586 9.63986 8.54415L12.1938 5.99018ZM6.36014 8.54415C6.70122 8.30586 7.09032 8.1447 7.50001 8.07204V4.46021C6.13798 4.56604 4.84413 5.10196 3.80617 5.99019L6.36014 8.54415ZM3.09905 6.69728C2.31929 7.60841 1.81101 8.71673 1.62683 9.89528C1.54155 10.4409 1.9972 10.8913 2.54949 10.8913H4.13673C4.68902 10.8913 5.1206 10.4304 5.3096 9.91151C5.39462 9.67806 5.50991 9.45598 5.653 9.25122L3.09905 6.69728Z" fill="#E8524A"/>
+                                            </svg>                                                
+                                            <p class="mb4">Average Member Joins</p>
+                                            <h3 class="mb0">49 Member</h3>
+                                        </div>
+                                        <div class="d-block">
+                                            <svg class="mb8" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.33333 2.66675L2 4.00008" stroke="#E8524A" stroke-width="2" stroke-linecap="round"/>
+                                                <path d="M12.6667 2.66675L14 4.00008" stroke="#E8524A" stroke-width="2" stroke-linecap="round"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00008C13.3333 5.05456 10.9455 2.66675 7.99999 2.66675C5.05447 2.66675 2.66666 5.05456 2.66666 8.00008C2.66666 10.9456 5.05447 13.3334 7.99999 13.3334ZM10.1142 6.95811C10.4592 6.52685 10.3893 5.89756 9.95802 5.55255C9.52676 5.20754 8.89746 5.27746 8.55245 5.70872L7.79185 6.65947L6.55469 5.8347C6.09516 5.52835 5.47429 5.65252 5.16794 6.11205C4.86159 6.57158 4.98576 7.19245 5.44529 7.4988L7.25458 8.70499C7.79407 9.06465 8.519 8.9521 8.92404 8.4458L10.1142 6.95811Z" fill="#E8524A"/>
+                                            </svg>                                                
+                                            <p class="mb4">Most member join</p>
+                                            <h3 class="mb0">April</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- content -->
+                    </div>
+                    <!-- member analytics -->
+                    <!-- income analytics -->
+                    <div class="card-wrapper analytics">
+                        <!-- section title -->
+                        <div class="section-title">
+                            <div class="title-wrapper">
+                                <h3 class="mb4">Income Analytic</h3>
+                                <p class="mb0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="filter-wrapper">
+                            </div>
+                        </div>
+                        <!-- section title -->
+                        <!-- content -->
+                        <div class="row">
+                            <div class="col-lg-3 col-md-12 col-12">
+                                <h4 class="mb16">Recent New Member</h4>
+                                <div class="recent-wrapper">
+                                    <div class="list w-100">
+                                        <div class="body-list w-100">
+                                            <div class="title-body-list align-items-center justify-content-between mb4">
+                                                <p class="body-1 high-emphasis mb4">Brooklyn Simmons</p>
+                                                <h4 class="body-1 text-green mb0">+$30</h4>
+                                            </div>
+                                            <div class="subtitle-body-list justify-content-between">
+                                                <p class="body-2 low-emphasis mb0">13:40:32</p>
+                                                <p class="body-2 high-emphasis mb0">Today</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list w-100">
+                                        <div class="body-list w-100">
+                                            <div class="title-body-list align-items-center justify-content-between mb4">
+                                                <p class="body-1 high-emphasis mb4">Brooklyn Simmons</p>
+                                                <h4 class="body-1 text-green mb0">+$30</h4>
+                                            </div>
+                                            <div class="subtitle-body-list justify-content-between">
+                                                <p class="body-2 low-emphasis mb0">13:40:32</p>
+                                                <p class="body-2 high-emphasis mb0">Today</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list w-100">
+                                        <div class="body-list w-100">
+                                            <div class="title-body-list align-items-center justify-content-between mb4">
+                                                <p class="body-1 high-emphasis mb4">Brooklyn Simmons</p>
+                                                <h4 class="body-1 text-green mb0">+$30</h4>
+                                            </div>
+                                            <div class="subtitle-body-list justify-content-between">
+                                                <p class="body-2 low-emphasis mb0">13:40:32</p>
+                                                <p class="body-2 high-emphasis mb0">Today</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list w-100">
+                                        <div class="body-list w-100">
+                                            <div class="title-body-list align-items-center justify-content-between mb4">
+                                                <p class="body-1 high-emphasis mb4">Brooklyn Simmons</p>
+                                                <h4 class="body-1 text-green mb0">+$30</h4>
+                                            </div>
+                                            <div class="subtitle-body-list justify-content-between">
+                                                <p class="body-2 low-emphasis mb0">13:40:32</p>
+                                                <p class="body-2 high-emphasis mb0">Today</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-9 col-md-12 col-12">
+                                <h4 class="mb16">Analytical Graphic</h4>
+                                <div class="analytical-wrapper">
+                                    <div class="chart-wrapper">
+                                        <canvas id="incomeChart" height="200"></canvas>
+                                    </div>
+                                    <div class="card-skeu">
+                                        <div class="d-block">
+                                            <svg class="mb8" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 1.66675V14.3367" stroke="#E8524A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M11.3333 3.33325H6.33333C5.71449 3.33325 5.121 3.57908 4.68342 4.01667C4.24583 4.45425 4 5.04775 4 5.66659C4 6.28542 4.24583 6.87892 4.68342 7.3165C5.121 7.75409 5.71449 7.99992 6.33333 7.99992H9.66667C10.2855 7.99992 10.879 8.24575 11.3166 8.68334C11.7542 9.12092 12 9.71441 12 10.3333C12 10.9521 11.7542 11.5456 11.3166 11.9832C10.879 12.4208 10.2855 12.6666 9.66667 12.6666H4" stroke="#E8524A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>                                                
+                                            <p class="mb4">Total Income Now</p>
+                                            <h3 class="mb0">$100.435,00 </h3>
+                                        </div>
+                                        <div class="d-block">
+                                            <svg class="mb8" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3732 9.89528C14.4585 10.4409 14.0028 10.8913 13.4505 10.8913H11.8633C11.311 10.8913 10.8794 10.4304 10.6904 9.91151C10.6054 9.67806 10.4901 9.45598 10.347 9.25121L12.9009 6.69727C13.6807 7.6084 14.189 8.71673 14.3732 9.89528ZM12.1938 5.99018C11.1559 5.10196 9.86202 4.56605 8.50001 4.46021V8.07204C8.90968 8.1447 9.29879 8.30586 9.63986 8.54415L12.1938 5.99018ZM6.36014 8.54415C6.70122 8.30586 7.09032 8.1447 7.50001 8.07204V4.46021C6.13798 4.56604 4.84413 5.10196 3.80617 5.99019L6.36014 8.54415ZM3.09905 6.69728C2.31929 7.60841 1.81101 8.71673 1.62683 9.89528C1.54155 10.4409 1.9972 10.8913 2.54949 10.8913H4.13673C4.68902 10.8913 5.1206 10.4304 5.3096 9.91151C5.39462 9.67806 5.50991 9.45598 5.653 9.25122L3.09905 6.69728Z" fill="#E8524A"/>
+                                            </svg>                                                                                           
+                                            <p class="mb4">Average Income</p>
+                                            <h3 class="mb0">$1.249 /Month</h3>
+                                        </div>
+                                        <div class="d-block">
+                                            <svg class="mb8" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.33333 2.66675L2 4.00008" stroke="#E8524A" stroke-width="2" stroke-linecap="round"/>
+                                                <path d="M12.6667 2.66675L14 4.00008" stroke="#E8524A" stroke-width="2" stroke-linecap="round"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00008C13.3333 5.05456 10.9455 2.66675 7.99999 2.66675C5.05447 2.66675 2.66666 5.05456 2.66666 8.00008C2.66666 10.9456 5.05447 13.3334 7.99999 13.3334ZM10.1142 6.95811C10.4592 6.52685 10.3893 5.89756 9.95802 5.55255C9.52676 5.20754 8.89746 5.27746 8.55245 5.70872L7.79185 6.65947L6.55469 5.8347C6.09516 5.52835 5.47429 5.65252 5.16794 6.11205C4.86159 6.57158 4.98576 7.19245 5.44529 7.4988L7.25458 8.70499C7.79407 9.06465 8.519 8.9521 8.92404 8.4458L10.1142 6.95811Z" fill="#E8524A"/>
+                                            </svg>                                                
+                                            <p class="mb4">Most member join</p>
+                                            <h3 class="mb0">May</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- content -->
+                    </div>
+                    <!-- income analytics -->
+                </div>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <!-- Online user -->
+                    <div class="card-wrapper online-user">
+                        <div class="subtitle">
+                            <p class="m0">
+                                <svg class="mr8" width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2" r="2" fill="#09C031"/>
+                                </svg>
+                                Online Users Now
+                            </p>
+                            <h3 class="mt8">32 User</h3>
+                        </div>
+                        <div class="desc-user">
+                            <p class="m0">Amount online users today</p>
+                            <h3 class="mt8">124 User</h3>
+                        </div>
+                    </div>
+                    <!-- Online user -->
+                    <!-- Monthly revenue -->
+                    <div class="card-wrapper-red">
+                        <div class="text-release">
+                            <h3 class="text-white">Monthly Revenue</h3>
+                            <h2 class="text-white">$2.490<span>,00</span></h2>
+                            <p class="neutral body-2 mb0">Last update on July 2021</p>
+                        </div>
+                        <div class="thumb-pattern">
+                            <img src="assets/images/statistik.png" alt="">
+                        </div>
+                    </div>
+                    <!-- Monthly revenue -->
+                    <!-- create new release -->
+                    <div class="card-wrapper create-release">
+                        <div class="title-wrapper mb24">
+                            <h3 class="mb0">Create New Releases</h3>
+                        </div>
+                        <form action="">
+                            <div class="form-group">
+                                <label for="plan">Choose Plan</label>
+                                <select id="plan">
+                                    <option>Select Options</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <div class="form-group">
+                                    <input id="password" type="password" placeholder="Input password" required>
+                                    <div class="check-password">
+                                        <input type="checkbox">
+                                        <div class="icon">
+                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M16.2585 5.54221C17.8236 6.75021 19.1561 8.51999 20.113 10.7333C20.1845 10.9013 20.1845 11.0978 20.113 11.2578C18.1992 15.6844 14.7919 18.3333 11 18.3333H10.991C7.20811 18.3333 3.80079 15.6844 1.88697 11.2578C1.81543 11.0978 1.81543 10.9013 1.88697 10.7333C3.80079 6.30577 7.20811 3.66666 10.991 3.66666H11C12.8959 3.66666 14.6935 4.32443 16.2585 5.54221ZM7.42276 11C7.42276 12.9556 9.02358 14.5467 11 14.5467C12.9675 14.5467 14.5683 12.9556 14.5683 11C14.5683 9.03557 12.9675 7.44446 11 7.44446C9.02358 7.44446 7.42276 9.03557 7.42276 11Z" fill="#101010" fill-opacity="0.5"/>
+                                                <path d="M13.2284 10.9971C13.2284 12.2149 12.2268 13.2105 11.0016 13.2105C9.76743 13.2105 8.76581 12.2149 8.76581 10.9971C8.76581 10.846 8.78369 10.7047 8.81052 10.5625H8.85524C9.84792 10.5625 10.6528 9.78024 10.6886 8.80157C10.7869 8.78468 10.8943 8.7749 11.0016 8.7749C12.2268 8.7749 13.2284 9.77046 13.2284 10.9971Z" fill="#101010" fill-opacity="0.5"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-flex">
+                                <div class="form-group w-100">
+                                    <label for="stock">Stock Amount</label>
+                                    <input id="stock" type="number" placeholder="000" required>
+                                </div>
+                                <div class="form-group w-100">
+                                    <label>Type Restock</label>
+                                    <select required>
+                                        <option>Select Options</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button href="" class="btn-custom btn-large btn-primary w-icon">
+                                Submit
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.3335 8H12.6668" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 3.33334L12.6667 8.00001L8 12.6667" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                    <!-- create new release -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Dashboard -->
+    
+    <!-- Modal Logout -->
+    <div id="ModalLogout" class="modal fade" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <img src="assets/images/logout.png" alt="">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Are you sure want to logout ?</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-custom btn-large btn-white w-100">Logout</button>
+                    <button type="button" class="btn-custom btn-large btn-primary w-100" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Logout -->
+    
+    <!-- Navigation -->
+    <div id="navigationModal" class="modal fade" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-slideout">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span>Menu's</span>
+                    <button class="close" type="button" data-dismiss="modal">
+                        <img src="assets/images/icon/close.svg" alt="">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="modal-list">
+                        <li class="nav-modal"><a href="index.html" class="nav-link">Dashboard</a></li>
+                        <li class="nav-modal"><a href="users.html" class="nav-link">Users</a></li>
+                        <li class="nav-modal"><a href="plans.html" class="nav-link">Plans</a></li>
+                        <li class="nav-modal active"><a href="releases.html" class="nav-link">Releases</a></li>
+                        <li class="nav-modal"><a href="settings.html" class="nav-link">Settings</a></li>
+                        <button id="btn-logout" type="button" class="btn-custom btn-text w-100 mt12" data-bs-toggle="modal" data-bs-target="#ModalLogout">
+                            <div class="list w-100">
+                                <div class="body-list d-flex align-items-center justify-content-between">
+                                    <div class="icon-list">
+                                        <img src="assets/images/pp.svg" alt="">
+                                    </div>
+                                    <div class="title-body-list">
+                                        <h5 class="m0 neutral">Kathryn Murphy</h5>
+                                    </div>
+                                </div>
+                                <div class="action-list">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 7.13193V6.61204C7 4.46614 7 3.3932 7.6896 2.79511C8.37919 2.19703 9.44136 2.34877 11.5657 2.65224L15.8485 3.26408C18.3047 3.61495 19.5327 3.79039 20.2664 4.63628C21 5.48217 21 6.72271 21 9.20377V14.7962C21 17.2773 21 18.5178 20.2664 19.3637C19.5327 20.2096 18.3047 20.385 15.8485 20.7359L11.5657 21.3478C9.44136 21.6512 8.37919 21.803 7.6896 21.2049C7 20.6068 7 19.5339 7 17.388V17.066" stroke="#E8524A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 7L16 12M16 12L12 17M16 12H4" stroke="#E8524A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    
+    <!-- Notification -->
+    <div id="notificationModal" class="modal fade" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-slideout">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Notifications -->
+                    <div id="dropdownNotification" class="notification">
+                        <div class="d-flex align-items-center justify-content-between mb24">
+                            <h3 class="m0 neutral">Notifications</h3>
+                            <a href="" class="body-2 text-link">
+                                <i>Mark all as read</i>
+                            </a>
+                        </div>
+                        <!-- notifi-list -->
+                        <div class="list align-items-start">
+                            <div class="icon-list">
+                                <svg class="active" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="16" fill="#E8524A"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2928 10C20.1868 10 21.0468 10.3533 21.6795 10.9873C22.3128 11.62 22.6668 12.4733 22.6668 13.3667V18.6333C22.6668 20.4933 21.1535 22 19.2928 22H12.7068C10.8462 22 9.3335 20.4933 9.3335 18.6333V13.3667C9.3335 11.5067 10.8395 10 12.7068 10H19.2928ZM20.3535 14.36L20.4069 14.3066C20.5662 14.1133 20.5662 13.8333 20.3995 13.64C20.3069 13.5406 20.1795 13.48 20.0469 13.4666C19.9069 13.4593 19.7735 13.5066 19.6729 13.6L16.6669 16C16.2802 16.3206 15.7262 16.3206 15.3335 16L12.3335 13.6C12.1262 13.4466 11.8395 13.4666 11.6669 13.6466C11.4869 13.8266 11.4669 14.1133 11.6195 14.3133L11.7069 14.4L14.7402 16.7666C15.1135 17.06 15.5662 17.22 16.0402 17.22C16.5129 17.22 16.9735 17.06 17.3462 16.7666L20.3535 14.36Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="body-list">
+                                <div class="title-body-list justify-content-between align-items-center pt8 pb8">
+                                    <h4 class="m0 neutral">Informations</h4>
+                                    <h5 class="m0 neutral">5m ago</h5>
+                                </div>
+                                <div class="subtitle-body-list">
+                                    <p class="body-3 mb16 neutral2">A feature has been added that allows the user
+                                        to call a person who is saved as a pre-configured
+                                        SOS message contact.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- notifi-list -->
+                        <!-- notifi-list -->
+                        <div class="list align-items-start">
+                            <div class="icon-list">
+                                <svg class="inactive" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="16" fill="#101010"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2928 10C20.1868 10 21.0468 10.3533 21.6795 10.9873C22.3128 11.62 22.6668 12.4733 22.6668 13.3667V18.6333C22.6668 20.4933 21.1535 22 19.2928 22H12.7068C10.8462 22 9.3335 20.4933 9.3335 18.6333V13.3667C9.3335 11.5067 10.8395 10 12.7068 10H19.2928ZM20.3535 14.36L20.4069 14.3066C20.5662 14.1133 20.5662 13.8333 20.3995 13.64C20.3069 13.5406 20.1795 13.48 20.0469 13.4666C19.9069 13.4593 19.7735 13.5066 19.6729 13.6L16.6669 16C16.2802 16.3206 15.7262 16.3206 15.3335 16L12.3335 13.6C12.1262 13.4466 11.8395 13.4666 11.6669 13.6466C11.4869 13.8266 11.4669 14.1133 11.6195 14.3133L11.7069 14.4L14.7402 16.7666C15.1135 17.06 15.5662 17.22 16.0402 17.22C16.5129 17.22 16.9735 17.06 17.3462 16.7666L20.3535 14.36Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="body-list">
+                                <div class="title-body-list justify-content-between align-items-center pt8 pb8">
+                                    <h4 class="m0 neutral">Informations</h4>
+                                    <h5 class="m0 neutral">5m ago</h5>
+                                </div>
+                                <div class="subtitle-body-list">
+                                    <p class="body-3 mb16 neutral2">A feature has been added that allows the user
+                                        to call a person who is saved as a pre-configured
+                                        SOS message contact.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- notifi-list -->
+                        <!-- notifi-list -->
+                        <div class="list align-items-start">
+                            <div class="icon-list">
+                                <svg class="inactive" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="16" fill="#101010"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2928 10C20.1868 10 21.0468 10.3533 21.6795 10.9873C22.3128 11.62 22.6668 12.4733 22.6668 13.3667V18.6333C22.6668 20.4933 21.1535 22 19.2928 22H12.7068C10.8462 22 9.3335 20.4933 9.3335 18.6333V13.3667C9.3335 11.5067 10.8395 10 12.7068 10H19.2928ZM20.3535 14.36L20.4069 14.3066C20.5662 14.1133 20.5662 13.8333 20.3995 13.64C20.3069 13.5406 20.1795 13.48 20.0469 13.4666C19.9069 13.4593 19.7735 13.5066 19.6729 13.6L16.6669 16C16.2802 16.3206 15.7262 16.3206 15.3335 16L12.3335 13.6C12.1262 13.4466 11.8395 13.4666 11.6669 13.6466C11.4869 13.8266 11.4669 14.1133 11.6195 14.3133L11.7069 14.4L14.7402 16.7666C15.1135 17.06 15.5662 17.22 16.0402 17.22C16.5129 17.22 16.9735 17.06 17.3462 16.7666L20.3535 14.36Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="body-list">
+                                <div class="title-body-list justify-content-between align-items-center pt8 pb8">
+                                    <h4 class="m0 neutral">Informations</h4>
+                                    <h5 class="m0 neutral">5m ago</h5>
+                                </div>
+                                <div class="subtitle-body-list">
+                                    <p class="body-3 mb16 neutral2">A feature has been added that allows the user
+                                        to call a person who is saved as a pre-configured
+                                        SOS message contact.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- notifi-list -->
+                        <div class="notifi-footer text-center">
+                            <a href="" class="body-1 text-link">
+                                <i>See all notifications</i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Notifications -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Notification -->
+    
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/chart/chart.js"></script>
+    
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+    
+    <!-- Password -->
+    <script type="text/javascript">
+        $(document).ready(function(){		
+            $('.check-password input').click(function(){
+                if($(this).is(':checked')){
+                    $('#password').attr('type','text');
+                }else{
+                    $('#password').attr('type','password');
+                }
+            });
+        });
+    </script>
+    <!-- Password -->
+    
+    <!-- Notifi -->
+    <script type="text/javascript">
+        function myFunction() {
+            var element = document.getElementById('dropdownNotification');
+            element.classList.toggle('showNotify');
+        }
+    </script>
+    <!-- Notifi -->
+    
+    <!-- logout -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#btn-logout').click(function() {
+                $('#navigationModal').modal('hide');
+            });
+        });
+    </script>
+    <!-- logout -->
+    
+    <!-- table -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.table').DataTable( {
+                language: {
+                    paginate: {
+                        previous: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.6668 8H3.3335" stroke="#101010" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.00016 12.6666L3.3335 7.99992L8.00016 3.33325" stroke="#101010" stroke-linecap="round" stroke-linejoin="round"/></svg>', // or '→'
+                        next: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33317 8H12.6665" stroke="#101010" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.99984 12.6666L12.6665 7.99992L7.99984 3.33325" stroke="#101010" stroke-linecap="round" stroke-linejoin="round"/></svg>' // or '←' 
+                    }
+                },
+                "dom": '<"top">rt<"bottom"lp><"clear">'
+            } );
+        } );
+    </script>
+    <!-- table -->
+    
+    <!-- chart -->
+    <script type="text/javascript">
+        // memberChart
+        var ctx = document.getElementById('memberChart').getContext('2d');
+        var memberChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul','Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                datasets: [{
+                    label: 'Total Member',
+                    fill: true,
+                    data: [200, 359, 500, 329, 389, 312, 983, 234, 653, 276, 192, 249],
+                    backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)'
+                    ],
+                    borderColor: [
+                    'rgba(255, 99, 132, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                elements: {
+                    line: {
+                        tension: 0.5
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false,
+                    }
+                },
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        grid: {
+                            borderDash: [10]
+                        },
+                        beginAtZero: true,
+                        ticks: {
+                            stepSize: 200
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                }
+            }
+        });
+        
+        // incomeChart
+        var ctx = document.getElementById('incomeChart').getContext('2d');
+        var incomeChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul','Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                datasets: [{
+                    label: 'Total Income',
+                    fill: true,
+                    data: [200, 359, 500, 329, 389, 312, 983, 234, 653, 276, 192, 249],
+                    backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)'
+                    ],
+                    borderColor: [
+                    'rgba(255, 99, 132, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                elements: {
+                    line: {
+                        tension: 0.5
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false,
+                    }
+                },
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        grid: {
+                            borderDash: [10]
+                        },
+                        beginAtZero: true,
+                        ticks: {
+                            stepSize: 200
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+    <!-- chart -->
+    
+</body>
+</html>

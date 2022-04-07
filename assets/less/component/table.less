@@ -1,0 +1,171 @@
+.table-responsive{
+    table {
+        width: 100%;
+        border-bottom: none !important;
+        padding-bottom: @space24;
+        
+        @media (max-width: 767px) {
+            width: max-content;
+        }
+        
+        tr{
+            background-color: transparent !important;
+        }
+        th {
+            padding: 12px 4px !important;
+            font-family: @fontFamily;
+            font-style: normal;
+            font-weight: 300 !important;
+            font-size: 12px;
+            line-height: 132%;
+            border-bottom: 1px solid @divider !important;
+            border-top: 0;
+            
+            @media (max-width: 767px) {
+                width: max-content !important;
+                padding-right: @space24;
+            }
+            
+            &.sorting_asc{
+                background-image: url('../../images/icon/sort-asc.svg') !important;
+            }
+            &.sorting_desc{
+                background-image: url('../../images/icon/sort-dsc.svg') !important;
+            }
+            &.sorting{
+                background-image: url('../../images/icon/sort-both.svg') !important;
+            }
+        }
+        td {
+            padding: 12px 4px !important;
+            font-family: @fontFamily;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 132%;
+            color: #101010;
+            vertical-align: inherit;
+            border: none;
+            // white-space: nowrap;
+            
+            @media (max-width: 767px) {
+                width: max-content !important;
+                padding-right: @space24;
+            }
+            
+            .progress-wrapper{
+                width: 100%;
+            }
+            
+            .action-table{
+                display: inline;
+
+                .btn-custom{
+                    margin-right: @space12;
+                    
+                    &.btn-icon{
+                        display: inline !important;
+                    }
+                    &:last-child{
+                        margin-right: @space0;
+                    }
+                }
+            }
+        }
+    }
+    .dataTables_length{
+        
+        @media (max-width: 767px) {
+            margin-bottom: @space16;
+            display: flex;
+            justify-content: center;
+        }
+        
+        label{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: @space0;
+            
+            select{
+                padding: 4px !important;
+                height: 32px;
+                width: 56px;
+                border-radius: 8px;
+            }
+        }
+    }
+    .dataTables_paginate{
+        margin: @space0;
+        padding: @space0;
+        display: flex;
+        gap: @space8;
+        
+        @media (max-width: 767px) {
+            display: flex;
+            justify-content: center;
+        }
+        
+        span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: @space8;
+        }
+        
+        .paginate_button{
+            min-width: 32px;
+            min-height: 32px;
+            padding: @space4;
+            border: 1px solid @divider !important;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: @fontFamily;
+            font-size: 14px;
+            line-height: normal;
+            font-weight: 400;
+            color: @lowEmphasis;
+            
+            &:hover{
+                background: @red !important;
+                border-color: @red !important;
+                transition: all .3s ease-out;
+                
+                svg{
+                    path{
+                        stroke: @neutral;
+                    }
+                }
+            }
+            
+            &.disabled{
+                opacity: 0.5;
+                
+                &:hover{
+                    background: transparent !important;
+                    border-color: @divider !important;
+                    transition: all .3s ease-out;
+                    
+                    svg{
+                        path{
+                            stroke: @black;
+                        }
+                    }
+                }
+            }
+            
+            &.current{
+                font-weight: 700;
+                color: @neutral !important;
+                background: @red;
+                border-color: @red;
+                
+                &:hover{
+                    color: @neutral !important;
+                }
+            }
+        }
+    }
+}

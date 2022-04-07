@@ -1,0 +1,52 @@
+// Import Style
+@import '../style.less';
+
+// Import Table
+@import '../component/table.less';
+
+// Users
+#users {
+    padding: @space32 0;
+    
+    // Responsive
+    @media(max-width: 767px){
+        padding: @space24 @space0;
+    }
+    
+    .users-analityc {
+        background: #FAFAFA;
+        border-radius: 16px;
+        padding: @space24;
+        
+        .users-update {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .amount-users {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 12px 0;
+            p{
+                width: 30%;
+            }
+            h3{
+                width: 25%;
+                
+                // Responsive
+                @media(max-width: 1024px) {
+                    width: 40%;
+                }
+                
+                @media(max-width: 768px) {
+                    width: 15%;
+                }
+                
+                @media(max-width: 767px) {
+                    width: 35%;
+                }
+            }
+        }
+    }
+}

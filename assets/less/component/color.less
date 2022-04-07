@@ -1,0 +1,53 @@
+@highEmphasis: rgba(16, 16, 16, 1);
+@lowEmphasis: rgba(16, 16, 16, 0.5);
+@placeholder: rgba(16, 16, 16, 0.32);
+@neutral: rgba(255, 255, 255, 1);
+@divider: rgba(16, 16, 16, 0.12);
+@red: #E8524A;
+@blue: #3E8AFD;
+@green: #28DE87;
+@black: #101010;
+
+
+
+.red{
+    background-color: @red;
+}
+.blue{
+    background-color: @blue;
+}
+.green{
+    background-color: @green;
+}
+.black{
+    background-color: @black;
+}
+.high-emphasis{
+    color: rgba(16, 16, 16, 1);
+}
+.low-emphasis{
+    color: rgba(16, 16, 16, 0.5);
+}
+.neutral{
+    color: @neutral;
+}
+.neutral2{
+    color: @neutral;
+    opacity: 0.7;
+}
+.text-red{
+    color: @red;
+}
+.text-green{
+    color: @green;
+}
+.text-link{
+    color: @red;
+    text-decoration: none;
+
+    &:hover{
+        color: @red;
+        text-decoration: underline;
+        transition: all .3s ease-out;
+    }
+}

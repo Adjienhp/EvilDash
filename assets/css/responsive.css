@@ -1,0 +1,87 @@
+@media (min-width: 2560px) {}
+
+@media (min-width: 1200px) {}
+
+@media (max-width: 1366px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1024px) {
+    /* notifi */
+    #notifi{
+        right: 200px;
+    }
+    #ModalNotifi .content {
+        margin-left: 687px;
+        height: 90%;
+        overflow: scroll;
+    }
+    
+    /* modal */
+    button.btn.btn-custom {
+        right: 22px;
+    }
+}
+
+@media (max-width: 900px) {}
+
+@media (max-width: 768px) {
+    
+    /* Notification */
+    #notifi{
+        display: none;
+    }
+    
+    /* Navigation */
+    #notifiOut{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 246px;
+        left: 30px;
+        opacity: 0.2;
+        z-index: 9999;
+        border: none;
+        outline: none;
+    }
+    
+    /* Modal Logout */
+    #ModalLogout.modal{
+        z-index: 9999;
+    }
+    #btn-modal{
+        display: none;
+    }
+    #btn-modal.out{
+        display: block;
+    }
+
+    /* Modal */
+    button.btn.btn-custom {
+        top: 244px;
+        left: 288px;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Notification */
+    #ModalNotifi .content {
+        margin-left: 72px;
+        width: 80%;
+    }
+
+    /* Modal Logout */
+    #ModalLogout .modal-header{
+        width: 100%;
+    }
+
+    /* Modal */
+    button.btn.btn-custom {
+        top: 244px;
+        left: 246px;
+    }
+}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 360px) {}

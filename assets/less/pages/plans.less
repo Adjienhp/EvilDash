@@ -1,0 +1,65 @@
+// Import Style
+@import '../style.less';
+
+// Plans
+#plans {
+    padding: @space32 @space0;
+    
+    @media(max-width: 767px) {
+        padding: @space24 @space0;
+    }
+    
+    .card-plan{
+        .head-plan{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            .plan-price{
+                display: flex;
+                align-items: center;
+                gap: @space8;
+                
+                span{
+                    font-size: 12px;
+                }
+            }
+        }
+        .body-plan{
+            background: rgba(0, 0, 0, 0.02);
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            gap: @space16;
+            padding: @space12 @space16;
+            margin: @space16 @space0;
+            
+            .plan-info{
+                display: flex;
+                gap: @space8;
+            }
+        }
+        .footer-plan{
+            display: flex;
+            align-items: center;
+            gap: @space16;
+            
+            .btn-custom{
+                gap: @space8;
+                
+                // Responsive
+                @media (max-width: 767px) {
+                    padding: @space0 @space8;
+                }
+            }
+        }
+    }
+    .create-plan{
+        @media(max-width: 767px) {
+            
+            .form-flex{
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Required meta taqs -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="twitter:card" content="Settings">
+    <meta name="twitter:site" content="@Evils">
+    <meta name="twitter:title" content="Evils Settings">
+    <meta name="twitter:description" content="Evils Dashboard Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+    <meta name="twitter:image" content="assets/images/favicon.svg">
+    
+    <title data-tid="Evils Settings">Evils Settings</title>
+    
+    <!-- Favicon -->
+    <link  rel="apple-touch-icon" href="assets/images/favicon.svg" sizes="40x40" type="image/svg">
+    <link rel="icon" href="assets/images/favicon.svg" sizes="40x40" type="image/svg">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet/less" href="assets/less/style.less">
+    <link rel="stylesheet/less" href="assets/less/pages/settings.less">
+    
+    <!-- font -->
+    <link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
+    
+    <!-- Place your kit's code here -->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script src="assets/less/less.js"></script>
+    
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav id="navbar-normal" class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand">
+                <img src="assets/images/logo.svg" alt="logo Evil Dash">
+            </a>
+            <div class="d-flex">
+                <button type="button" class="btn-custom btn-small btn-icon" data-bs-toggle="modal" data-bs-target="#notificationModal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2705 2.66963C13.5636 2.39815 12.7976 2.25 12 2.25C8.77131 2.25 6.05895 4.67767 5.70241 7.88659L5.4506 10.1528L5.44445 10.2078C5.32759 11.2261 4.99613 12.2081 4.47192 13.0889L4.44351 13.1364L3.86548 14.0998L3.84605 14.1321C3.60038 14.5416 3.38731 14.8966 3.24704 15.1945C3.10493 15.4962 2.9733 15.8655 3.03755 16.2727C3.10348 16.6906 3.31854 17.0704 3.64292 17.3419C3.95905 17.6066 4.34348 17.6837 4.67532 17.7171C5.0029 17.75 5.41699 17.75 5.89446 17.75L5.93221 17.75H18.0677L18.1055 17.75C18.583 17.75 18.9971 17.75 19.3246 17.7171C19.6565 17.6837 20.0409 17.6066 20.357 17.3419C20.6814 17.0704 20.8965 16.6906 20.9624 16.2727C21.0267 15.8655 20.895 15.4962 20.7529 15.1945C20.6126 14.8966 20.3996 14.5416 20.1539 14.1322L20.1539 14.1322L20.1345 14.0998L19.5564 13.1364L19.528 13.0889C19.1332 12.4255 18.8477 11.7046 18.6809 10.954C18.4582 10.9843 18.2309 11 18 11C17.7088 11 17.4235 10.9751 17.1459 10.9273C17.3313 11.9598 17.701 12.9521 18.239 13.8561L18.2702 13.9081L18.8482 14.8715C19.1189 15.3227 19.2917 15.6124 19.3959 15.8336C19.4599 15.9694 19.4747 16.0337 19.4782 16.0527C19.4674 16.1024 19.4418 16.1477 19.4047 16.1824C19.3867 16.1893 19.3239 16.2096 19.1745 16.2246C18.9312 16.2491 18.5939 16.25 18.0677 16.25H5.93221C5.40607 16.25 5.06871 16.2491 4.82547 16.2246C4.67606 16.2096 4.61327 16.1893 4.59522 16.1824C4.55813 16.1477 4.53251 16.1024 4.52179 16.0527C4.52521 16.0337 4.54009 15.9694 4.60407 15.8336C4.70823 15.6124 4.88102 15.3227 5.15172 14.8715L5.72975 13.9081L5.76092 13.8561C6.39359 12.793 6.79364 11.6078 6.93467 10.3788L6.94143 10.3185L7.19323 8.05224C7.46537 5.60297 9.53563 3.75 12 3.75C12.4969 3.75 12.9778 3.82534 13.4311 3.96573C13.6434 3.48979 13.9278 3.05312 14.2705 2.66963ZM16.774 4.41972C16.3343 4.76129 16.041 5.2823 16.004 5.8728C16.34 6.368 16.5873 6.93032 16.7217 7.53822C17.0683 7.82658 17.5139 8 18 8C18.1046 8 18.2073 7.99197 18.3075 7.9765L18.2975 7.8866C18.1499 6.55813 17.5986 5.36357 16.774 4.41972Z" fill="white"/>
+                        <path d="M9.10222 17.6647C9.27315 18.6215 9.64978 19.467 10.1737 20.0701C10.6976 20.6731 11.3396 21 12 21C12.6604 21 13.3024 20.6731 13.8263 20.0701C14.3502 19.467 14.7269 18.6215 14.8978 17.6647" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                        <circle cx="18" cy="6" r="2.5" fill="#E8524A" stroke="#E8524A"/>
+                    </svg>
+                </button>
+                <button class="navbar-toggler" type="button" data-target="#navigationModal" data-toggle="modal">
+                    <img src="assets/images/icon/burger-menu-white.svg" alt="">
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcoll">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Dashboard</a></li>
+                    <li class="nav-item"><a href="users.html" class="nav-link">Users</a></li>
+                    <li class="nav-item"><a href="plans.html" class="nav-link">Plans</a></li>
+                    <li class="nav-item"><a href="releases.html" class="nav-link">Releases</a></li>
+                    <li class="nav-item active"><a href="settings.html" class="nav-link">Settings</a></li>
+                </ul>
+                <!-- action navbar -->
+                <div class="action-navbar">
+                    <div class="pattern"></div>
+                    <div class="icon-bell">
+                        <button type="button" class="btn-custom btn-small btn-icon" onclick="myFunction()">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2705 2.66963C13.5636 2.39815 12.7976 2.25 12 2.25C8.77131 2.25 6.05895 4.67767 5.70241 7.88659L5.4506 10.1528L5.44445 10.2078C5.32759 11.2261 4.99613 12.2081 4.47192 13.0889L4.44351 13.1364L3.86548 14.0998L3.84605 14.1321C3.60038 14.5416 3.38731 14.8966 3.24704 15.1945C3.10493 15.4962 2.9733 15.8655 3.03755 16.2727C3.10348 16.6906 3.31854 17.0704 3.64292 17.3419C3.95905 17.6066 4.34348 17.6837 4.67532 17.7171C5.0029 17.75 5.41699 17.75 5.89446 17.75L5.93221 17.75H18.0677L18.1055 17.75C18.583 17.75 18.9971 17.75 19.3246 17.7171C19.6565 17.6837 20.0409 17.6066 20.357 17.3419C20.6814 17.0704 20.8965 16.6906 20.9624 16.2727C21.0267 15.8655 20.895 15.4962 20.7529 15.1945C20.6126 14.8966 20.3996 14.5416 20.1539 14.1322L20.1539 14.1322L20.1345 14.0998L19.5564 13.1364L19.528 13.0889C19.1332 12.4255 18.8477 11.7046 18.6809 10.954C18.4582 10.9843 18.2309 11 18 11C17.7088 11 17.4235 10.9751 17.1459 10.9273C17.3313 11.9598 17.701 12.9521 18.239 13.8561L18.2702 13.9081L18.8482 14.8715C19.1189 15.3227 19.2917 15.6124 19.3959 15.8336C19.4599 15.9694 19.4747 16.0337 19.4782 16.0527C19.4674 16.1024 19.4418 16.1477 19.4047 16.1824C19.3867 16.1893 19.3239 16.2096 19.1745 16.2246C18.9312 16.2491 18.5939 16.25 18.0677 16.25H5.93221C5.40607 16.25 5.06871 16.2491 4.82547 16.2246C4.67606 16.2096 4.61327 16.1893 4.59522 16.1824C4.55813 16.1477 4.53251 16.1024 4.52179 16.0527C4.52521 16.0337 4.54009 15.9694 4.60407 15.8336C4.70823 15.6124 4.88102 15.3227 5.15172 14.8715L5.72975 13.9081L5.76092 13.8561C6.39359 12.793 6.79364 11.6078 6.93467 10.3788L6.94143 10.3185L7.19323 8.05224C7.46537 5.60297 9.53563 3.75 12 3.75C12.4969 3.75 12.9778 3.82534 13.4311 3.96573C13.6434 3.48979 13.9278 3.05312 14.2705 2.66963ZM16.774 4.41972C16.3343 4.76129 16.041 5.2823 16.004 5.8728C16.34 6.368 16.5873 6.93032 16.7217 7.53822C17.0683 7.82658 17.5139 8 18 8C18.1046 8 18.2073 7.99197 18.3075 7.9765L18.2975 7.8866C18.1499 6.55813 17.5986 5.36357 16.774 4.41972Z" fill="white"/>
+                                <path d="M9.10222 17.6647C9.27315 18.6215 9.64978 19.467 10.1737 20.0701C10.6976 20.6731 11.3396 21 12 21C12.6604 21 13.3024 20.6731 13.8263 20.0701C14.3502 19.467 14.7269 18.6215 14.8978 17.6647" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                <circle cx="18" cy="6" r="2.5" fill="#E8524A" stroke="#E8524A"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <button id="btn-logout" type="button" class="btn-custom btn-text w-100" data-bs-toggle="modal" data-bs-target="#ModalLogout">
+                        <div class="list w-100">
+                            <div class="body-list d-flex align-items-center justify-content-between">
+                                <div class="icon-list">
+                                    <img src="assets/images/pp.svg" alt="">
+                                </div>
+                                <div class="title-body-list">
+                                    <h5 class="m0 neutral">Kathryn Murphy</h5>
+                                </div>
+                            </div>
+                            <div class="action-list ml16">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 7.13193V6.61204C7 4.46614 7 3.3932 7.6896 2.79511C8.37919 2.19703 9.44136 2.34877 11.5657 2.65224L15.8485 3.26408C18.3047 3.61495 19.5327 3.79039 20.2664 4.63628C21 5.48217 21 6.72271 21 9.20377V14.7962C21 17.2773 21 18.5178 20.2664 19.3637C19.5327 20.2096 18.3047 20.385 15.8485 20.7359L11.5657 21.3478C9.44136 21.6512 8.37919 21.803 7.6896 21.2049C7 20.6068 7 19.5339 7 17.388V17.066" stroke="#E8524A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 7L16 12M16 12L12 17M16 12H4" stroke="#E8524A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <!-- action navbar -->
+            </div>
+            <!-- Notifications -->
+            <div id="dropdownNotification" class="notification">
+                <div class="d-flex align-items-center justify-content-between mb24">
+                    <h3 class="m0">Notifications</h3>
+                    <a href="" class="body-2 text-link">
+                        <i>Mark all as read</i>
+                    </a>
+                </div>
+                <!-- notifi-list -->
+                <div class="list align-items-start">
+                    <div class="icon-list">
+                        <svg class="active" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="#E8524A"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2928 10C20.1868 10 21.0468 10.3533 21.6795 10.9873C22.3128 11.62 22.6668 12.4733 22.6668 13.3667V18.6333C22.6668 20.4933 21.1535 22 19.2928 22H12.7068C10.8462 22 9.3335 20.4933 9.3335 18.6333V13.3667C9.3335 11.5067 10.8395 10 12.7068 10H19.2928ZM20.3535 14.36L20.4069 14.3066C20.5662 14.1133 20.5662 13.8333 20.3995 13.64C20.3069 13.5406 20.1795 13.48 20.0469 13.4666C19.9069 13.4593 19.7735 13.5066 19.6729 13.6L16.6669 16C16.2802 16.3206 15.7262 16.3206 15.3335 16L12.3335 13.6C12.1262 13.4466 11.8395 13.4666 11.6669 13.6466C11.4869 13.8266 11.4669 14.1133 11.6195 14.3133L11.7069 14.4L14.7402 16.7666C15.1135 17.06 15.5662 17.22 16.0402 17.22C16.5129 17.22 16.9735 17.06 17.3462 16.7666L20.3535 14.36Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="body-list">
+                        <div class="title-body-list justify-content-between align-items-center pt8 pb8">
+                            <h4 class="m0">Informations</h4>
+                            <h5 class="m0">5m ago</h5>
+                        </div>
+                        <div class="subtitle-body-list">
+                            <p class="body-3 mb16">A feature has been added that allows the user
+                                to call a person who is saved as a pre-configured
+                                SOS message contact.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- notifi-list -->
+                <!-- notifi-list -->
+                <div class="list align-items-start">
+                    <div class="icon-list">
+                        <svg class="inactive" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="#101010"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2928 10C20.1868 10 21.0468 10.3533 21.6795 10.9873C22.3128 11.62 22.6668 12.4733 22.6668 13.3667V18.6333C22.6668 20.4933 21.1535 22 19.2928 22H12.7068C10.8462 22 9.3335 20.4933 9.3335 18.6333V13.3667C9.3335 11.5067 10.8395 10 12.7068 10H19.2928ZM20.3535 14.36L20.4069 14.3066C20.5662 14.1133 20.5662 13.8333 20.3995 13.64C20.3069 13.5406 20.1795 13.48 20.0469 13.4666C19.9069 13.4593 19.7735 13.5066 19.6729 13.6L16.6669 16C16.2802 16.3206 15.7262 16.3206 15.3335 16L12.3335 13.6C12.1262 13.4466 11.8395 13.4666 11.6669 13.6466C11.4869 13.8266 11.4669 14.1133 11.6195 14.3133L11.7069 14.4L14.7402 16.7666C15.1135 17.06 15.5662 17.22 16.0402 17.22C16.5129 17.22 16.9735 17.06 17.3462 16.7666L20.3535 14.36Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="body-list">
+                        <div class="title-body-list justify-content-between align-items-center pt8 pb8">
+                            <h4 class="m0">Informations</h4>
+                            <h5 class="m0">5m ago</h5>
+                        </div>
+                        <div class="subtitle-body-list">
+                            <p class="body-3 mb16">A feature has been added that allows the user
+                                to call a person who is saved as a pre-configured
+                                SOS message contact.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- notifi-list -->
+                <!-- notifi-list -->
+                <div class="list align-items-start">
+                    <div class="icon-list">
+                        <svg class="inactive" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="#101010"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2928 10C20.1868 10 21.0468 10.3533 21.6795 10.9873C22.3128 11.62 22.6668 12.4733 22.6668 13.3667V18.6333C22.6668 20.4933 21.1535 22 19.2928 22H12.7068C10.8462 22 9.3335 20.4933 9.3335 18.6333V13.3667C9.3335 11.5067 10.8395 10 12.7068 10H19.2928ZM20.3535 14.36L20.4069 14.3066C20.5662 14.1133 20.5662 13.8333 20.3995 13.64C20.3069 13.5406 20.1795 13.48 20.0469 13.4666C19.9069 13.4593 19.7735 13.5066 19.6729 13.6L16.6669 16C16.2802 16.3206 15.7262 16.3206 15.3335 16L12.3335 13.6C12.1262 13.4466 11.8395 13.4666 11.6669 13.6466C11.4869 13.8266 11.4669 14.1133 11.6195 14.3133L11.7069 14.4L14.7402 16.7666C15.1135 17.06 15.5662 17.22 16.0402 17.22C16.5129 17.22 16.9735 17.06 17.3462 16.7666L20.3535 14.36Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="body-list">
+                        <div class="title-body-list justify-content-between align-items-center pt8 pb8">
+                            <h4 class="m0">Informations</h4>
+                            <h5 class="m0">5m ago</h5>
+                        </div>
+                        <div class="subtitle-body-list">
+                            <p class="body-3 mb16">A feature has been added that allows the user
+                                to call a person who is saved as a pre-configured
+                                SOS message contact.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- notifi-list -->
+                <!-- notifi-list -->
+                <div class="list align-items-start">
+                    <div class="icon-list">
+                        <svg class="inactive" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="#101010"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2928 10C20.1868 10 21.0468 10.3533 21.6795 10.9873C22.3128 11.62 22.6668 12.4733 22.6668 13.3667V18.6333C22.6668 20.4933 21.1535 22 19.2928 22H12.7068C10.8462 22 9.3335 20.4933 9.3335 18.6333V13.3667C9.3335 11.5067 10.8395 10 12.7068 10H19.2928ZM20.3535 14.36L20.4069 14.3066C20.5662 14.1133 20.5662 13.8333 20.3995 13.64C20.3069 13.5406 20.1795 13.48 20.0469 13.4666C19.9069 13.4593 19.7735 13.5066 19.6729 13.6L16.6669 16C16.2802 16.3206 15.7262 16.3206 15.3335 16L12.3335 13.6C12.1262 13.4466 11.8395 13.4666 11.6669 13.6466C11.4869 13.8266 11.4669 14.1133 11.6195 14.3133L11.7069 14.4L14.7402 16.7666C15.1135 17.06 15.5662 17.22 16.0402 17.22C16.5129 17.22 16.9735 17.06 17.3462 16.7666L20.3535 14.36Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="body-list">
+                        <div class="title-body-list justify-content-between align-items-center pt8 pb8">
+                            <h4 class="m0">Informations</h4>
+                            <h5 class="m0">5m ago</h5>
+                        </div>
+                        <div class="subtitle-body-list">
+                            <p class="body-3 mb16">A feature has been added that allows the user
+                                to call a person who is saved as a pre-configured
+                                SOS message contact.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- notifi-list -->
+                <div class="notifi-footer text-center">
+                    <a href="" class="body-1 text-link">
+                        <i>See all notifications</i>
+                    </a>
+                </div>
+            </div>
+            <!-- Notifications -->
+        </div>
+    </nav>
+    <!-- Navbar -->
+    
+    <!-- Setting -->
+    <section id="setting">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <!-- card wrapper -->
+                    <div class="card-wrapper">
+                        <div class="list">
+                            <div class="body-list">
+                                <h3 class="mb4">Autofill Protection</h3>
+                                <p class="m0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="action-list">
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card wrapper -->
+                    <!-- card wrapper -->
+                    <div class="card-wrapper">
+                        <div class="list">
+                            <div class="body-list">
+                                <h3 class="mb4">Normal Bot Protection</h3>
+                                <p class="m0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="action-list">
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card wrapper -->
+                    <!-- card wrapper -->
+                    <div class="card-wrapper">
+                        <div class="list">
+                            <div class="body-list">
+                                <h3 class="mb4">Advanced Bot Protection</h3>
+                                <p class="m0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="action-list">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card wrapper -->
+                    <!-- card wrapper -->
+                    <div class="card-wrapper">
+                        <div class="title-wrapper mb24">
+                            <h3 class="mb4">Branding</h3>
+                            <p class="m0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="branding-wrapper">
+                            <div class="logo-setting-wrapper">
+                                <label for="">Logo</label>
+                                <div class="logo-setting">
+                                    <div class="logo-brand-container mr16">
+                                        <img src="assets/images/profile/profile-picture.png" alt="">
+                                    </div>
+                                    <div class="file-name-container">
+                                        <p class="m0">file name</p>
+                                        <h5>evil-logo-hd.png</h5>
+                                        <button href="" class="btn-custom btn-medium btn-outline-red w-icon">
+                                            <svg class="mr12" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.86939 3.33334C1.3335 4.26155 1.3335 5.5077 1.3335 8.00001C1.3335 10.4923 1.3335 11.7385 1.86939 12.6667C2.22047 13.2748 2.72542 13.7797 3.3335 14.1308C4.2617 14.6667 5.50785 14.6667 8.00016 14.6667C10.4925 14.6667 11.7386 14.6667 12.6668 14.1308C13.2749 13.7797 13.7799 13.2748 14.1309 12.6667C14.6668 11.7385 14.6668 10.4923 14.6668 8.00001C14.6668 5.87252 14.6668 4.65307 14.3335 3.7643V11.3333C13.6932 11.3333 13.0791 11.079 12.6264 10.6262L12.1253 10.1251L12.1251 10.125C12.0842 10.084 12.0637 10.0635 12.0459 10.0466C11.2735 9.31128 10.0601 9.31128 9.28778 10.0466C9.27002 10.0635 9.24953 10.084 9.20862 10.1249L9.20855 10.125L9.20838 10.1251L9.13295 10.2006L9.13293 10.2006C9.05456 10.2789 9.01538 10.3181 8.98387 10.3448C8.49676 10.7575 7.75295 10.6142 7.45394 10.0502C7.4346 10.0137 7.41277 9.96275 7.3691 9.86086L7.3335 9.77779L7.33349 9.77778C7.18296 9.42654 7.10769 9.25092 7.03356 9.12922C6.4195 8.12122 5.07062 7.86145 4.12611 8.5693C4.01208 8.65476 3.87698 8.78986 3.60677 9.06007L3.60676 9.06008L3.60676 9.06008L2.3335 10.3333V2.68759C2.15843 2.88609 2.0028 3.10227 1.86939 3.33334Z" fill="#E8524A"/>
+                                                <path d="M2.0835 8.00001C2.0835 6.74005 2.08421 5.84523 2.14742 5.14783C2.20969 4.46075 2.32785 4.03927 2.51891 3.70834C2.80416 3.21428 3.21443 2.80401 3.7085 2.51876C4.03942 2.3277 4.4609 2.20954 5.14799 2.14727C5.84538 2.08406 6.74021 2.08334 8.00016 2.08334C9.26012 2.08334 10.1549 2.08406 10.8523 2.14727C11.5394 2.20954 11.9609 2.3277 12.2918 2.51876C12.7859 2.80401 13.1962 3.21428 13.4814 3.70834C13.6725 4.03927 13.7906 4.46075 13.8529 5.14783C13.9161 5.84523 13.9168 6.74005 13.9168 8.00001C13.9168 9.25997 13.9161 10.1548 13.8529 10.8522C13.7906 11.5393 13.6725 11.9608 13.4814 12.2917C13.1962 12.7857 12.7859 13.196 12.2918 13.4813C11.9609 13.6723 11.5394 13.7905 10.8523 13.8528C10.1549 13.916 9.26012 13.9167 8.00016 13.9167C6.74021 13.9167 5.84538 13.916 5.14799 13.8528C4.4609 13.7905 4.03942 13.6723 3.7085 13.4813C3.21443 13.196 2.80416 12.7857 2.51891 12.2917C2.32785 11.9608 2.20969 11.5393 2.14742 10.8522C2.08421 10.1548 2.0835 9.25997 2.0835 8.00001Z" stroke="#E8524A" stroke-width="1.5"/>
+                                                <ellipse cx="9.99984" cy="5.99999" rx="1.33333" ry="1.33333" fill="#E8524A"/>
+                                            </svg>
+                                            Change Logo
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="color-setting-wrapper">
+                                <label for="">Color Settings</label>
+                                <div class="color-setting">
+                                    <!-- color items -->
+                                    <div class="color-items">
+                                        <input type="radio" id="theme-primary" name="amount" checked />
+                                        <label for="theme-primary">
+                                            <div class="icon-flash">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.99984 11.7299V9.65915C7.99984 9.4629 7.99984 9.36478 7.94778 9.2973C7.9347 9.28034 7.9195 9.26514 7.90254 9.25205C7.83506 9.2 7.73693 9.2 7.54068 9.2C6.37076 9.2 5.78579 9.2 5.48783 8.86862C5.41468 8.78726 5.35537 8.69446 5.31228 8.5939C5.13674 8.18428 5.3825 7.65345 5.87401 6.59178L7.0461 4.06006C7.42029 3.25182 7.60739 2.8477 7.80361 2.89091C7.99984 2.93413 7.99984 3.37946 7.99984 4.27012V6.34085C7.99984 6.5371 7.99984 6.63522 8.05189 6.7027C8.06497 6.71966 8.08018 6.73486 8.09714 6.74795C8.16461 6.8 8.26274 6.8 8.45899 6.8C9.62892 6.8 10.2139 6.8 10.5118 7.13138C10.585 7.21274 10.6443 7.30554 10.6874 7.4061C10.8629 7.81572 10.6172 8.34655 10.1257 9.40822L8.95357 11.9399C8.57938 12.7482 8.39229 13.1523 8.19606 13.1091C7.99984 13.0659 7.99984 12.6205 7.99984 11.7299Z" fill="#101010"/>
+                                                </svg>                                                    
+                                            </div>
+                                            <div class="color-palette-wrapper">
+                                                <div class="palette black"></div>
+                                                <div class="palette red"></div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <!-- color items -->
+                                    <!-- color items -->
+                                    <div class="color-items">
+                                        <input type="radio" id="theme-secondary" name="amount" />
+                                        <label for="theme-secondary">
+                                            <div class="icon-flash">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.99984 11.7299V9.65915C7.99984 9.4629 7.99984 9.36478 7.94778 9.2973C7.9347 9.28034 7.9195 9.26514 7.90254 9.25205C7.83506 9.2 7.73693 9.2 7.54068 9.2C6.37076 9.2 5.78579 9.2 5.48783 8.86862C5.41468 8.78726 5.35537 8.69446 5.31228 8.5939C5.13674 8.18428 5.3825 7.65345 5.87401 6.59178L7.0461 4.06006C7.42029 3.25182 7.60739 2.8477 7.80361 2.89091C7.99984 2.93413 7.99984 3.37946 7.99984 4.27012V6.34085C7.99984 6.5371 7.99984 6.63522 8.05189 6.7027C8.06497 6.71966 8.08018 6.73486 8.09714 6.74795C8.16461 6.8 8.26274 6.8 8.45899 6.8C9.62892 6.8 10.2139 6.8 10.5118 7.13138C10.585 7.21274 10.6443 7.30554 10.6874 7.4061C10.8629 7.81572 10.6172 8.34655 10.1257 9.40822L8.95357 11.9399C8.57938 12.7482 8.39229 13.1523 8.19606 13.1091C7.99984 13.0659 7.99984 12.6205 7.99984 11.7299Z" fill="#101010"/>
+                                                </svg>                                                    
+                                            </div>
+                                            <div class="color-palette-wrapper">
+                                                <div class="palette black"></div>
+                                                <div class="palette blue"></div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <!-- color items -->
+                                    <!-- color items -->
+                                    <div class="color-items">
+                                        <input type="radio" id="theme-tersier" name="amount" />
+                                        <label for="theme-tersier">
+                                            <div class="icon-flash">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.99984 11.7299V9.65915C7.99984 9.4629 7.99984 9.36478 7.94778 9.2973C7.9347 9.28034 7.9195 9.26514 7.90254 9.25205C7.83506 9.2 7.73693 9.2 7.54068 9.2C6.37076 9.2 5.78579 9.2 5.48783 8.86862C5.41468 8.78726 5.35537 8.69446 5.31228 8.5939C5.13674 8.18428 5.3825 7.65345 5.87401 6.59178L7.0461 4.06006C7.42029 3.25182 7.60739 2.8477 7.80361 2.89091C7.99984 2.93413 7.99984 3.37946 7.99984 4.27012V6.34085C7.99984 6.5371 7.99984 6.63522 8.05189 6.7027C8.06497 6.71966 8.08018 6.73486 8.09714 6.74795C8.16461 6.8 8.26274 6.8 8.45899 6.8C9.62892 6.8 10.2139 6.8 10.5118 7.13138C10.585 7.21274 10.6443 7.30554 10.6874 7.4061C10.8629 7.81572 10.6172 8.34655 10.1257 9.40822L8.95357 11.9399C8.57938 12.7482 8.39229 13.1523 8.19606 13.1091C7.99984 13.0659 7.99984 12.6205 7.99984 11.7299Z" fill="#101010"/>
+                                                </svg>                                                    
+                                            </div>
+                                            <div class="color-palette-wrapper">
+                                                <div class="palette black"></div>
+                                                <div class="palette green"></div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <!-- color items -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- branding -->
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="card-wrapper">
+                        <!-- Strip setting -->
+                        <div class="title-wrapper mb24">
+                            <h3 class="mb4">Stripe settings</h3>
+                            <p class="m0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="privateKey">Stripe private key</label>
+                            <input type="password" placeholder="Input password">
+                        </div>
+                        <div class="form-group">
+                            <label for="publicKey">Stripe public key</label>
+                            <input type="password" placeholder="Input password">
+                        </div>
+                        <!-- Strip setting -->
+                    </div>
+                    <div class="card-wrapper">
+                        <!-- domain setting -->
+                        <div class="title-wrapper mb24">
+                            <h3 class="mb4">Domain Settings</h3>
+                            <p class="m0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="domain">Domain</label>
+                            <div class="form-flex">
+                                <input type="text" placeholder="Input your domain">
+                                <a href="" class="btn-custom btn-large btn-primary">
+                                    Submit
+                                </a>
+                            </div>
+                        </div>
+                        <a href="" class="body-2 text-link">
+                            <i>how to change domain?</i>
+                        </a>
+                        <!-- domain setting -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Setting -->
+    
+    <!-- Modal Logout -->
+    <div id="ModalLogout" class="modal fade" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <img src="assets/images/logout.png" alt="">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Are you sure want to logout ?</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-custom btn-large btn-white w-100">Logout</button>
+                    <button type="button" class="btn-custom btn-large btn-primary w-100" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Logout -->
+    
+    <!-- Navigation -->
+    <div id="navigationModal" class="modal fade" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-slideout">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span>Menu's</span>
+                    <button class="close" type="button" data-dismiss="modal">
+                        <img src="assets/images/icon/close.svg" alt="">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="modal-list">
+                        <li class="nav-modal"><a href="index.html" class="nav-link">Dashboard</a></li>
+                        <li class="nav-modal"><a href="users.html" class="nav-link">Users</a></li>
+                        <li class="nav-modal"><a href="plans.html" class="nav-link">Plans</a></li>
+                        <li class="nav-modal"><a href="releases.html" class="nav-link">Releases</a></li>
+                        <li class="nav-modal active"><a href="settings.html" class="nav-link">Settings</a></li>
+                        <button id="btn-logout" type="button" class="btn-custom btn-text w-100 mt12" data-bs-toggle="modal" data-bs-target="#ModalLogout">
+                            <div class="list w-100">
+                                <div class="body-list d-flex align-items-center justify-content-between">
+                                    <div class="icon-list">
+                                        <img src="assets/images/pp.svg" alt="">
+                                    </div>
+                                    <div class="title-body-list">
+                                        <h5 class="m0 neutral">Kathryn Murphy</h5>
+                                    </div>
+                                </div>
+                                <div class="action-list">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 7.13193V6.61204C7 4.46614 7 3.3932 7.6896 2.79511C8.37919 2.19703 9.44136 2.34877 11.5657 2.65224L15.8485 3.26408C18.3047 3.61495 19.5327 3.79039 20.2664 4.63628C21 5.48217 21 6.72271 21 9.20377V14.7962C21 17.2773 21 18.5178 20.2664 19.3637C19.5327 20.2096 18.3047 20.385 15.8485 20.7359L11.5657 21.3478C9.44136 21.6512 8.37919 21.803 7.6896 21.2049C7 20.6068 7 19.5339 7 17.388V17.066" stroke="#E8524A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 7L16 12M16 12L12 17M16 12H4" stroke="#E8524A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    
+    <!-- Notification -->
+    <div id="notificationModal" class="modal fade" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-slideout">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Notifications -->
+                    <div id="dropdownNotification" class="notification">
+                        <div class="d-flex align-items-center justify-content-between mb24">
+                            <h3 class="m0 neutral">Notifications</h3>
+                            <a href="" class="body-2 text-link">
+                                <i>Mark all as read</i>
+                            </a>
+                        </div>
+                        <!-- notifi-list -->
+                        <div class="list align-items-start">
+                            <div class="icon-list">
+                                <svg class="active" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="16" fill="#E8524A"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2928 10C20.1868 10 21.0468 10.3533 21.6795 10.9873C22.3128 11.62 22.6668 12.4733 22.6668 13.3667V18.6333C22.6668 20.4933 21.1535 22 19.2928 22H12.7068C10.8462 22 9.3335 20.4933 9.3335 18.6333V13.3667C9.3335 11.5067 10.8395 10 12.7068 10H19.2928ZM20.3535 14.36L20.4069 14.3066C20.5662 14.1133 20.5662 13.8333 20.3995 13.64C20.3069 13.5406 20.1795 13.48 20.0469 13.4666C19.9069 13.4593 19.7735 13.5066 19.6729 13.6L16.6669 16C16.2802 16.3206 15.7262 16.3206 15.3335 16L12.3335 13.6C12.1262 13.4466 11.8395 13.4666 11.6669 13.6466C11.4869 13.8266 11.4669 14.1133 11.6195 14.3133L11.7069 14.4L14.7402 16.7666C15.1135 17.06 15.5662 17.22 16.0402 17.22C16.5129 17.22 16.9735 17.06 17.3462 16.7666L20.3535 14.36Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="body-list">
+                                <div class="title-body-list justify-content-between align-items-center pt8 pb8">
+                                    <h4 class="m0 neutral">Informations</h4>
+                                    <h5 class="m0 neutral">5m ago</h5>
+                                </div>
+                                <div class="subtitle-body-list">
+                                    <p class="body-3 mb16 neutral2">A feature has been added that allows the user
+                                        to call a person who is saved as a pre-configured
+                                        SOS message contact.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- notifi-list -->
+                        <!-- notifi-list -->
+                        <div class="list align-items-start">
+                            <div class="icon-list">
+                                <svg class="inactive" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="16" fill="#101010"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2928 10C20.1868 10 21.0468 10.3533 21.6795 10.9873C22.3128 11.62 22.6668 12.4733 22.6668 13.3667V18.6333C22.6668 20.4933 21.1535 22 19.2928 22H12.7068C10.8462 22 9.3335 20.4933 9.3335 18.6333V13.3667C9.3335 11.5067 10.8395 10 12.7068 10H19.2928ZM20.3535 14.36L20.4069 14.3066C20.5662 14.1133 20.5662 13.8333 20.3995 13.64C20.3069 13.5406 20.1795 13.48 20.0469 13.4666C19.9069 13.4593 19.7735 13.5066 19.6729 13.6L16.6669 16C16.2802 16.3206 15.7262 16.3206 15.3335 16L12.3335 13.6C12.1262 13.4466 11.8395 13.4666 11.6669 13.6466C11.4869 13.8266 11.4669 14.1133 11.6195 14.3133L11.7069 14.4L14.7402 16.7666C15.1135 17.06 15.5662 17.22 16.0402 17.22C16.5129 17.22 16.9735 17.06 17.3462 16.7666L20.3535 14.36Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="body-list">
+                                <div class="title-body-list justify-content-between align-items-center pt8 pb8">
+                                    <h4 class="m0 neutral">Informations</h4>
+                                    <h5 class="m0 neutral">5m ago</h5>
+                                </div>
+                                <div class="subtitle-body-list">
+                                    <p class="body-3 mb16 neutral2">A feature has been added that allows the user
+                                        to call a person who is saved as a pre-configured
+                                        SOS message contact.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- notifi-list -->
+                        <!-- notifi-list -->
+                        <div class="list align-items-start">
+                            <div class="icon-list">
+                                <svg class="inactive" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="16" fill="#101010"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2928 10C20.1868 10 21.0468 10.3533 21.6795 10.9873C22.3128 11.62 22.6668 12.4733 22.6668 13.3667V18.6333C22.6668 20.4933 21.1535 22 19.2928 22H12.7068C10.8462 22 9.3335 20.4933 9.3335 18.6333V13.3667C9.3335 11.5067 10.8395 10 12.7068 10H19.2928ZM20.3535 14.36L20.4069 14.3066C20.5662 14.1133 20.5662 13.8333 20.3995 13.64C20.3069 13.5406 20.1795 13.48 20.0469 13.4666C19.9069 13.4593 19.7735 13.5066 19.6729 13.6L16.6669 16C16.2802 16.3206 15.7262 16.3206 15.3335 16L12.3335 13.6C12.1262 13.4466 11.8395 13.4666 11.6669 13.6466C11.4869 13.8266 11.4669 14.1133 11.6195 14.3133L11.7069 14.4L14.7402 16.7666C15.1135 17.06 15.5662 17.22 16.0402 17.22C16.5129 17.22 16.9735 17.06 17.3462 16.7666L20.3535 14.36Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="body-list">
+                                <div class="title-body-list justify-content-between align-items-center pt8 pb8">
+                                    <h4 class="m0 neutral">Informations</h4>
+                                    <h5 class="m0 neutral">5m ago</h5>
+                                </div>
+                                <div class="subtitle-body-list">
+                                    <p class="body-3 mb16 neutral2">A feature has been added that allows the user
+                                        to call a person who is saved as a pre-configured
+                                        SOS message contact.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- notifi-list -->
+                        <div class="notifi-footer text-center">
+                            <a href="" class="body-1 text-link">
+                                <i>See all notifications</i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Notifications -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Notification -->
+    
+    
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+    
+    <!-- Password -->
+    <script type="text/javascript">
+        $(document).ready(function(){		
+            $('.check').click(function(){
+                if($(this).is(':checked')){
+                    $('.form-password').attr('type','text');
+                }else{
+                    $('.form-password').attr('type','password');
+                }
+            });
+        });
+    </script>
+    <!-- Password -->
+    
+    <!-- Notifi -->
+    <script type="text/javascript">
+        function myFunction() {
+            var element = document.getElementById('dropdownNotification');
+            element.classList.toggle('showNotify');
+        }
+    </script>
+    <!-- Notifi -->
+    
+    <!-- logout -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#btn-logout').click(function() {
+                $('#navigationModal').modal('hide');
+            });
+        });
+    </script>
+    <!-- logout -->
+    
+</body>
+</html>

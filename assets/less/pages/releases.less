@@ -1,0 +1,20 @@
+// Import Style
+@import '../style.less';
+
+// Import Table
+@import '../component/table.less';
+
+// Releases
+#releases {
+    padding: @space32 @space0;
+    
+    @media(max-width: 767px) {
+        padding: @space24 @space0;
+    }
+    
+    .create-release{
+        .form-flex{
+            display: block;
+        }
+    }
+}
